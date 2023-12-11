@@ -72,7 +72,9 @@
     <ClCompile Include="Bunker.cpp" />
     <ClCompile Include="Cannon.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameList.cpp" />
     <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameState.cpp" />
     <ClCompile Include="Laser.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mothership.cpp" />
@@ -87,7 +89,9 @@
     <ClInclude Include="Cannon.h" />
     <ClInclude Include="checkML.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="GameList.h" />
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameState.h" />
     <ClInclude Include="Laser.h" />
     <ClInclude Include="Mothership.h" />
     <ClInclude Include="SceneObject.h" />
