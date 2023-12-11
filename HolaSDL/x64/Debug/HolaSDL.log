@@ -1,0 +1,42 @@
+﻿  Alien.cpp
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(71,14): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(77,17): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  Cannon.cpp
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(71,14): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(77,17): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  Game.cpp
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(71,14): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(77,17): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+  GameObject.cpp
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(71,14): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(77,17): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+  Laser.cpp
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(71,14): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(77,17): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+  Mothership.cpp
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(71,14): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(77,17): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+  SceneObject.cpp
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(71,14): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(77,17): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  ShooterAlien.cpp
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(71,14): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(77,17): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  UFO.cpp
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(71,14): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(77,17): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  main.cpp
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(71,14): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\texture.h(77,17): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  Generando código...
+  HolaSDL.vcxproj -> C:\Users\Jaime Vicente Arroyo\Desktop\c0s1t4s\Universidad\2º\TPV2\entrega\bin\HolaSDLDebug.exe
