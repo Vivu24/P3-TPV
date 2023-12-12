@@ -33,7 +33,7 @@ NUM_TEXTURES = 6,
 PLAYER_VELOCITY = 4,
 FRAME_RATE = 30;
 
-class PlayState :
+class SDLApplication :
 	public GameState
 {
 private:
@@ -86,8 +86,8 @@ private:
 	};
 
 public:
-	PlayState();
-	~PlayState();
+	SDLApplication();
+	~SDLApplication();
 
 	void Run();
 	void FireLaser(Point2D<int> position, const char* color);

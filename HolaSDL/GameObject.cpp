@@ -1,8 +1,8 @@
 #include "GameObject.h"
-#include "Game.h"
+#include "PlayState.h"
 #include "checkML.h"
 
-GameObject::GameObject(Game* game) : myGame(game) {};
+GameObject::GameObject(SDLApplication* game) : myGame(game) {};
 
 GameObject::~GameObject() { myGame = nullptr; }
 

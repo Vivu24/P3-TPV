@@ -2,7 +2,7 @@
 #include "PlayState.h"
 
 // Constructora
-PlayState::PlayState() {
+SDLApplication::SDLApplication() {
 	// Inicializacion de SDL
 	SDL_Init(SDL_INIT_EVERYTHING);
 	window = SDL_CreateWindow("Space Invaders", SDL_WINDOWPOS_CENTERED,
@@ -35,7 +35,7 @@ PlayState::PlayState() {
 }
 
 // Destructora
-PlayState::~PlayState() {
+SDLApplication::~SDLApplication() {
 	for (auto i : textures) delete i;
 	for (auto i : objectElems) delete i;
 	delete mama;
@@ -46,7 +46,7 @@ PlayState::~PlayState() {
 }
 
 // Menu de incio
-void PlayState::Menu() {
+void SDLApplication::Menu() {
 	int res;
 	cout << "Pulse los siguientes números para cargar los mapas \n";
 	cout << "1 - Original / 2 - Trinchera / 3 - Lluvia \n";
@@ -74,7 +74,7 @@ void PlayState::Menu() {
 }
 
 // Ejecucion del juego
-void PlayState::Run() {
+void SDLApplication::Run() {
 	uint32_t startTime,
 		frameTime;
 	// Mientras el jugador este vivo o no hayan muerto todos los aliens
@@ -93,11 +93,11 @@ void PlayState::Run() {
 };
 
 // Render general
-void PlayState::Render() {
+void SDLApplication::Render() {
 	textures[Stars]->render();
 	// Renderizado de todos los objetos de escena
-	for (std::list<SceneObject*>::iterator it = objectElems.begin(); it != objectElems.end(); ++it) {
-		(*it)->Render();
+	for (SceneObject& obj : objectElems) {
+		obj.Render();
 	}
 	// Renderizado de la puntuación
 	RenderPoints();
@@ -106,7 +106,7 @@ void PlayState::Render() {
 }
 
 // Render de los puntos
-void PlayState::RenderPoints() {
+void SDLApplication::RenderPoints() {
 	SDL_Rect scoreRect = { 0, 550, 50, 50 };
 	textures[Numbers]->renderFrame(scoreRect, 0, (myPoints / 1000) % 1000);
 	scoreRect = { 50, 550, 50, 50 };
@@ -118,11 +118,10 @@ void PlayState::RenderPoints() {
 }
 
 // Update general
-void PlayState::Update() {
+void SDLApplication::Update() {
 	// Update de los scenesObjects
-	for (std::list<SceneObject*>::iterator it = objectElems.begin(); it != objectElems.end(); ++it) {
-
-		(*it)->Update();
+	for (SceneObject& obj : objectElems) {
+		obj.Update();
 	}
 	// Lista auxiliar para eliminar los objetos
 	for (auto i : objectToDelete) {
@@ -140,7 +139,7 @@ void PlayState::Update() {
 }
 
 // Manejo de eventos
-void PlayState::HandleEvents()
+void SDLApplication::HandleEvents()
 {
 	SDL_Event event;
 	if (SDL_PollEvent(&event) && !exit)
@@ -201,26 +200,26 @@ void PlayState::HandleEvents()
 }
 
 // Disparar
-void PlayState::FireLaser(Point2D<int> position, const char* color) {
+void SDLApplication::FireLaser(Point2D<int> position, const char* color) {
 	// Creamos el laser y se añade al vector
 	Laser* l = new Laser(this, nullptr, position, 10, 20, 1, 0, 0, color);
 	objectElems.push_back(l);
 	l->setListIterator(prev(objectElems.end()));
 }
 
-void PlayState::SpawnUFO() {
+void SDLApplication::SpawnUFO() {
 	UFO* u = new UFO(this, textures[UFOs], Vector2D<int>(800, 10), textures[UFOs]->getFrameWidth(), textures[UFOs]->getFrameHeight(), 1, 0, 0, 0, 200);
 	objectElems.push_back(u);
 	u->setListIterator(prev(objectElems.end()));
 }
 
 // Generador de aleatorios
-int PlayState::GetRandomRange(int min, int max) {
+int SDLApplication::GetRandomRange(int min, int max) {
 	return uniform_int_distribution<int>(min, max)(rdo);
 }
 
 // Colisiones
-bool PlayState::Damage(SDL_Rect rect, const char* c) {
+bool SDLApplication::Damage(SDL_Rect rect, const char* c) {
 	for (list<SceneObject*>::iterator it = objectElems.begin(); it != objectElems.end(); ++it) {
 		if ((*it)->Hit(rect, c)) return true;
 	}
@@ -228,7 +227,7 @@ bool PlayState::Damage(SDL_Rect rect, const char* c) {
 }
 
 // Carga de mapas
-void PlayState::LoadMaps(string map) {
+void SDLApplication::LoadMaps(string map) {
 	// Flujo de entrada
 	ifstream entrada(map);
 
@@ -344,14 +343,14 @@ void PlayState::LoadMaps(string map) {
 }
 
 // Cuando un objeto ha de ser eliminado se añade a la lista de objetos a eliminar
-void PlayState::HasDied(const std::list<SceneObject*>::iterator& it) {
+void SDLApplication::HasDied(const std::list<SceneObject*>::iterator& it) {
 	if (it != objectElems.end()) {
 		objectToDelete.push_back(*it);
 	}
 }
 
 // Devuelve el número de aliens
-int PlayState::GetAlienNums() {
+int SDLApplication::GetAlienNums() {
 	int auxAlienNum = 0;
 	for (list<SceneObject*>::iterator it = objectElems.begin(); it != objectElems.end(); ++it) {
 		if (dynamic_cast<Alien*>(*it) != nullptr) {
@@ -362,12 +361,12 @@ int PlayState::GetAlienNums() {
 }
 
 // Suma los puntos recibidos a la puntuación general
-void PlayState::addPoints(int p) {
+void SDLApplication::addPoints(int p) {
 	myPoints += p;
 }
 
 // Guardado en un archivo k
-void PlayState::Save(int k) {
+void SDLApplication::Save(int k) {
 	string fileName = "saved";
 
 	// Creación del flujo

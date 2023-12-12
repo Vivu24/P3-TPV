@@ -1,9 +1,9 @@
 #include "Mothership.h"
-#include "Game.h"
+#include "PlayState.h"
 #include "checkML.h"
 
 // Constructora
-Mothership::Mothership(Game* game) : GameObject(game) {};
+Mothership::Mothership(SDLApplication* game) : GameObject(game) {};
 
 // Update
 void Mothership::Update() {

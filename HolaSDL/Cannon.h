@@ -6,7 +6,7 @@
 #include <ostream>
 #include <iostream>
 
-class Game;
+class SDLApplication;
 
 class Cannon : public SceneObject
 {
@@ -18,7 +18,7 @@ private:
 	bool input;
 
 public:
-	Cannon(Game* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, int cd);
+	Cannon(SDLApplication* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, int cd);
 	void Update() override;
 	void HandleEvent(SDL_Event& event);
 	void Move();

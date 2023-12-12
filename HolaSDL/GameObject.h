@@ -4,18 +4,18 @@
 
 using namespace std;
 
-class Game;
+class SDLApplication;
 
 class GameObject
 {
 protected:
 
-	Game* myGame;
+	SDLApplication* myGame;
 
 protected:
 
 	GameObject();
-	GameObject(Game* game);
+	GameObject(SDLApplication* game);
 	virtual ~GameObject();
 
 	virtual void Render() const = 0;

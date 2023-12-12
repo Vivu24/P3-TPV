@@ -13,7 +13,7 @@ using namespace std;
 int main(int argc, char* argv[])
 {	
 	try {
-		Game cacaolat = Game();
+		PlayState cacaolat = PlayState();
 		cacaolat.Run();
 	}
 	catch (InvadersError& e) {

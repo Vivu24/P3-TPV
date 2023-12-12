@@ -3,7 +3,7 @@
 #include "Game.h"
 
 // Constructora
-Laser::Laser(Game* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, const char* type)
+Laser::Laser(SDLApplication* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, const char* type)
 	: SceneObject(game, texture, pos, w, h, l, f, c), myType(type) {};
 
 // Render

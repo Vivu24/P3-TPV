@@ -6,26 +6,28 @@
 #include "GameList.h"
 #include "GameObject.h"
 #include <list>
+#include "EventHandler.h"
 
+class SDLApplication;
 
 class GameState
 {
-private:
+protected:
 	GameList<GameObject, true> myList;
 	list<EventHandler*> myEvents;
 	// Puntero al juego
 
-	void Render() const;
+	virtual void Render() const;
 	void Update();
 	void HandleEvent(const SDL_Event&);
 	void Save(ostream&) const;
 	void HasDied(GameList<GameObject, true>::anchor);
-	void getGame() const;
+	SDLApplication* getGame() const { return myApp; };
 
 	void addEventListener();
-	void addObject();
+	void addObject(GameObject* obj);
 
-public:
-
+private:
+	SDLApplication* myApp;
 };
 

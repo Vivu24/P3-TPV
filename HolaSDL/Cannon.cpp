@@ -4,7 +4,7 @@
 
 
 // Constructora
-Cannon::Cannon(Game* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, int cd) :
+Cannon::Cannon(SDLApplication* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, int cd) :
 	SceneObject(game, texture, pos, w, h, l, f, c), cooldown(cd){
 	currentCooldown = cooldown;
 }
