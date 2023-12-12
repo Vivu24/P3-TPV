@@ -12,7 +12,7 @@ private:
 	const char* myType;
 
 public:
-	Laser(SDLApplication* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, const char* type);
+	Laser(PlayState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, const char* type);
 
 	bool Hit(SDL_Rect rect, const char* c) override;
 

@@ -3,7 +3,7 @@
 #include "checkML.h"
 
 // Constructora
-SceneObject::SceneObject(SDLApplication* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c)
+SceneObject::SceneObject(PlayState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c)
 	: GameObject(game), myTexture(texture), myPosition(pos), myWidth(w), myHeight(h), myLifes(l), myFil(f), myCol(c) {}
 
 // Render

@@ -4,7 +4,7 @@
 class ShooterAlien : public Alien
 {
 public:
-	ShooterAlien(SDLApplication* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, Mothership* mama, int cd);
+	ShooterAlien(PlayState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, Mothership* mama, int cd);
 	void Save(ostream& out) const override;
 private:
 	int cooldown;

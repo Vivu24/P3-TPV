@@ -5,14 +5,14 @@
 #include "SDL_image.h"
 #include "Vector2D.h"
 #include <iostream>
-#include "Game.h"
+#include "MainMenuState.h"
 
 using namespace std;
 
 
 int main(int argc, char* argv[])
 {	
-	try {
+	/*try {
 		PlayState cacaolat = PlayState();
 		cacaolat.Run();
 	}
@@ -20,5 +20,8 @@ int main(int argc, char* argv[])
 		cout << e.what();
 	}
 	
-	return 0;
+	return 0;*/
+
+	//MainMenuState main = new MainMenuState();
+	//main.Render();
 }

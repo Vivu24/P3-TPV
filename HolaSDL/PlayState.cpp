@@ -1,52 +1,27 @@
 #include "checkML.h"
 #include "PlayState.h"
 
+const std::string PlayState::s_playID = "PLAY";
+
 // Constructora
-SDLApplication::SDLApplication() {
-	// Inicializacion de SDL
-	SDL_Init(SDL_INIT_EVERYTHING);
-	window = SDL_CreateWindow("Space Invaders", SDL_WINDOWPOS_CENTERED,
-		SDL_WINDOWPOS_CENTERED, WIN_WIDTH, WIN_HEIGHT, SDL_WINDOW_SHOWN);
-	renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
-	if (window == nullptr || renderer == nullptr)
-		throw SDLError("Error de SDL: "s + SDL_GetError());
-	else {
-		SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
-		SDL_RenderClear(renderer);
-	}
-
+PlayState::PlayState() {
 	mama = new Mothership(this);
-
-	// Carga de texturas en el array
-	for (int i = 0; i < NUM_TEXTURES; ++i) {
-		try {
-			textures[i] =
-				new Texture(renderer, (textureRoot + imgs[i].name).c_str(),
-					imgs[i].horizontalFrames, imgs[i].verticalFrames);
-		}
-		catch (...) {
-			throw FileNotFoundError("Error al cargar la textura: "s + imgs[i].name);
-		}
-	}
-
-
 
 	Menu();
 }
 
 // Destructora
-SDLApplication::~SDLApplication() {
-	for (auto i : textures) delete i;
-	for (auto i : objectElems) delete i;
+PlayState::~PlayState() {
+	//for (auto i : objectElems) delete i;
 	delete mama;
 
-	SDL_DestroyRenderer(renderer);
+	/*SDL_DestroyRenderer(renderer);
 	SDL_DestroyWindow(window);
-	SDL_Quit();
+	SDL_Quit();*/
 }
 
 // Menu de incio
-void SDLApplication::Menu() {
+void PlayState::Menu() {
 	int res;
 	cout << "Pulse los siguientes números para cargar los mapas \n";
 	cout << "1 - Original / 2 - Trinchera / 3 - Lluvia \n";
@@ -74,13 +49,13 @@ void SDLApplication::Menu() {
 }
 
 // Ejecucion del juego
-void SDLApplication::Run() {
+void PlayState::Run() {
 	uint32_t startTime,
 		frameTime;
 	// Mientras el jugador este vivo o no hayan muerto todos los aliens
 	while (!exit) {
 		startTime = SDL_GetTicks();
-		SDL_RenderClear(renderer);
+		//SDL_RenderClear(renderer);
 		Update();
 		Render();
 		HandleEvents();
@@ -93,8 +68,9 @@ void SDLApplication::Run() {
 };
 
 // Render general
-void SDLApplication::Render() {
-	textures[Stars]->render();
+void PlayState::Render() {
+	getGame()->getTexture(TextureName::Stars)->render();
+
 	// Renderizado de todos los objetos de escena
 	for (SceneObject& obj : objectElems) {
 		obj.Render();
@@ -102,32 +78,32 @@ void SDLApplication::Render() {
 	// Renderizado de la puntuación
 	RenderPoints();
 
-	SDL_RenderPresent(renderer);
+	//SDL_RenderPresent(renderer);
 }
 
 // Render de los puntos
-void SDLApplication::RenderPoints() {
+void PlayState::RenderPoints() {
 	SDL_Rect scoreRect = { 0, 550, 50, 50 };
-	textures[Numbers]->renderFrame(scoreRect, 0, (myPoints / 1000) % 1000);
+	getGame()->getTexture(TextureName::Numbers)->renderFrame(scoreRect, 0, (myPoints / 1000) % 1000);
 	scoreRect = { 50, 550, 50, 50 };
-	textures[Numbers]->renderFrame(scoreRect, 0, (myPoints / 100) % 100);
+	getGame()->getTexture(TextureName::Numbers)->renderFrame(scoreRect, 0, (myPoints / 100) % 100);
 	scoreRect = { 100, 550, 50, 50 };
-	textures[Numbers]->renderFrame(scoreRect, 0, (myPoints / 10) % 10);
+	getGame()->getTexture(TextureName::Numbers)->renderFrame(scoreRect, 0, (myPoints / 10) % 10);
 	scoreRect = { 150, 550, 50, 50 };
-	textures[Numbers]->renderFrame(scoreRect, 0, 0);
+	getGame()->getTexture(TextureName::Numbers)->renderFrame(scoreRect, 0, 0);
 }
 
 // Update general
-void SDLApplication::Update() {
+void PlayState::Update() {
 	// Update de los scenesObjects
 	for (SceneObject& obj : objectElems) {
 		obj.Update();
 	}
 	// Lista auxiliar para eliminar los objetos
-	for (auto i : objectToDelete) {
+	/*for (auto i : objectToDelete) {
 		objectElems.erase(i->getIterator());
 		delete i;
-	}
+	}*/
 
 	if (objectToDelete.size() > 0) {
 		objectToDelete.clear();
@@ -139,7 +115,7 @@ void SDLApplication::Update() {
 }
 
 // Manejo de eventos
-void SDLApplication::HandleEvents()
+void PlayState::HandleEvents()
 {
 	SDL_Event event;
 	if (SDL_PollEvent(&event) && !exit)
@@ -200,34 +176,35 @@ void SDLApplication::HandleEvents()
 }
 
 // Disparar
-void SDLApplication::FireLaser(Point2D<int> position, const char* color) {
+void PlayState::FireLaser(Point2D<int> position, const char* color) {
 	// Creamos el laser y se añade al vector
 	Laser* l = new Laser(this, nullptr, position, 10, 20, 1, 0, 0, color);
 	objectElems.push_back(l);
-	l->setListIterator(prev(objectElems.end()));
+	//l->setListIterator(prev(objectElems.end()));
 }
 
-void SDLApplication::SpawnUFO() {
-	UFO* u = new UFO(this, textures[UFOs], Vector2D<int>(800, 10), textures[UFOs]->getFrameWidth(), textures[UFOs]->getFrameHeight(), 1, 0, 0, 0, 200);
+void PlayState::SpawnUFO() {
+	Texture* auxTex = getGame()->getTexture(TextureName::UFOs);
+	UFO* u = new UFO(this, auxTex, Vector2D<int>(800, 10), auxTex->getFrameWidth(), auxTex->getFrameHeight(), 1, 0, 0, 0, 200);
 	objectElems.push_back(u);
-	u->setListIterator(prev(objectElems.end()));
+	//u->setListIterator(prev(objectElems.end()));
 }
 
 // Generador de aleatorios
-int SDLApplication::GetRandomRange(int min, int max) {
+int PlayState::GetRandomRange(int min, int max) {
 	return uniform_int_distribution<int>(min, max)(rdo);
 }
 
 // Colisiones
-bool SDLApplication::Damage(SDL_Rect rect, const char* c) {
-	for (list<SceneObject*>::iterator it = objectElems.begin(); it != objectElems.end(); ++it) {
-		if ((*it)->Hit(rect, c)) return true;
+bool PlayState::Damage(SDL_Rect rect, const char* c) {
+	for (auto it = objectElems.begin(); it != objectElems.end(); ++it) {
+		if ((*it).Hit(rect, c)) return true;
 	}
 	return false;
 }
 
 // Carga de mapas
-void SDLApplication::LoadMaps(string map) {
+void PlayState::LoadMaps(string map) {
 	// Flujo de entrada
 	ifstream entrada(map);
 
@@ -262,8 +239,9 @@ void SDLApplication::LoadMaps(string map) {
 				entrada >> elementY;
 				entrada >> lifes;
 				entrada >> cooldown;
-				Cannon* c = new Cannon(this, textures[Spaceship], Point2D<int>(elementX, elementY),
-					textures[Spaceship]->getFrameWidth(), textures[Spaceship]->getFrameHeight(), lifes, 0, 0, cooldown);
+				Texture* auxTex = getGame()->getTexture(TextureName::Spaceship);
+				Cannon* c = new Cannon(this, auxTex, Point2D<int>(elementX, elementY),
+					auxTex->getFrameWidth(), auxTex->getFrameHeight(), lifes, 0, 0, cooldown);
 				objectElems.push_back(c);
 				player = c;
 			}
@@ -273,8 +251,9 @@ void SDLApplication::LoadMaps(string map) {
 				entrada >> elementX;
 				entrada >> elementY;
 				entrada >> subIndiceAlien;
-				Alien* a = new Alien(this, textures[Aliens], Point2D<int>(elementX, elementY),
-					textures[Aliens]->getFrameWidth(), textures[Aliens]->getFrameHeight(), 1, subIndiceAlien, 0, mama);
+				Texture* auxTex = getGame()->getTexture(TextureName::Aliens);
+				Alien* a = new Alien(this, auxTex, Point2D<int>(elementX, elementY),
+					auxTex->getFrameWidth(), auxTex->getFrameHeight(), 1, subIndiceAlien, 0, mama);
 				objectElems.push_back(a);
 				mama->addAlien();
 			}
@@ -285,8 +264,9 @@ void SDLApplication::LoadMaps(string map) {
 				entrada >> elementY;
 				entrada >> subIndiceAlien;
 				entrada >> cooldown;
-				ShooterAlien* a = new ShooterAlien(this, textures[Aliens], Point2D<int>(elementX, elementY),
-					textures[Aliens]->getFrameWidth(), textures[Aliens]->getFrameHeight(), 1, subIndiceAlien, 0, mama, cooldown);
+				Texture* auxTex = getGame()->getTexture(TextureName::Aliens);
+				ShooterAlien* a = new ShooterAlien(this, auxTex, Point2D<int>(elementX, elementY),
+					auxTex->getFrameWidth(), auxTex->getFrameHeight(), 1, subIndiceAlien, 0, mama, cooldown);
 				objectElems.push_back(a);
 				mama->addAlien();
 			}
@@ -296,8 +276,9 @@ void SDLApplication::LoadMaps(string map) {
 				entrada >> elementX;
 				entrada >> elementY;
 				entrada >> lifes;
-				Bunker* b = new Bunker(this, textures[Bunkers], Point2D<int>(elementX, elementY),
-					textures[Bunkers]->getFrameWidth(), textures[Bunkers]->getFrameHeight(), lifes, 0, 0);
+				Texture* auxTex = getGame()->getTexture(TextureName::Bunkers);
+				Bunker* b = new Bunker(this, auxTex, Point2D<int>(elementX, elementY),
+					auxTex->getFrameWidth(), auxTex->getFrameHeight(), lifes, 0, 0);
 				objectElems.push_back(b);
 			}
 
@@ -307,8 +288,9 @@ void SDLApplication::LoadMaps(string map) {
 				entrada >> elementY;
 				entrada >> state;
 				entrada >> cooldown;
-				UFO* b = new UFO(this, textures[UFOs], Point2D<int>(elementX, elementY),
-					textures[UFOs]->getFrameWidth(), textures[UFOs]->getFrameHeight(), 1, 0, 0, state, cooldown);
+				Texture* auxTex = getGame()->getTexture(TextureName::UFOs);
+				UFO* b = new UFO(this, auxTex, Point2D<int>(elementX, elementY),
+					auxTex->getFrameWidth(), auxTex->getFrameHeight(), 1, 0, 0, state, cooldown);
 				objectElems.push_back(b);
 			}
 
@@ -331,9 +313,9 @@ void SDLApplication::LoadMaps(string map) {
 		}
 
 		// Asignamos a cada sceneObject su iterador
-		std::list<SceneObject*>::iterator it = objectElems.begin();
-		for (SceneObject* s : objectElems) {
-			s->setListIterator(it);
+		auto it = objectElems.begin();
+		for (SceneObject& s : objectElems) {
+			//s.setListIterator(it);
 			++it;
 		}
 	}
@@ -343,30 +325,30 @@ void SDLApplication::LoadMaps(string map) {
 }
 
 // Cuando un objeto ha de ser eliminado se añade a la lista de objetos a eliminar
-void SDLApplication::HasDied(const std::list<SceneObject*>::iterator& it) {
+void PlayState::HasDied(const GameList<SceneObject*>::iterator& it) {
 	if (it != objectElems.end()) {
 		objectToDelete.push_back(*it);
 	}
 }
 
 // Devuelve el número de aliens
-int SDLApplication::GetAlienNums() {
+int PlayState::GetAlienNums() {
 	int auxAlienNum = 0;
-	for (list<SceneObject*>::iterator it = objectElems.begin(); it != objectElems.end(); ++it) {
-		if (dynamic_cast<Alien*>(*it) != nullptr) {
+	for (auto it = objectElems.begin(); it != objectElems.end(); ++it) {
+		/*if (dynamic_cast<Alien*>(*it) != nullptr) {
 			auxAlienNum++;
-		}
+		}*/
 	}
 	return auxAlienNum;
 }
 
 // Suma los puntos recibidos a la puntuación general
-void SDLApplication::addPoints(int p) {
+void PlayState::addPoints(int p) {
 	myPoints += p;
 }
 
 // Guardado en un archivo k
-void SDLApplication::Save(int k) {
+void PlayState::Save(int k) {
 	string fileName = "saved";
 
 	// Creación del flujo
@@ -374,7 +356,7 @@ void SDLApplication::Save(int k) {
 
 	// Cada sceneObject se guarda con los datos necesarios en el flujo
 	for (auto i : objectElems) {
-		i->Save(out);
+		i.Save(out);
 	}
 	// Guardado de la mothership
 	mama->Save(out);

@@ -2,7 +2,7 @@
 #include "PlayState.h"
 #include "checkML.h"
 
-GameObject::GameObject(SDLApplication* game) : myGame(game) {};
+GameObject::GameObject(PlayState* game) : myGame(game) {};
 
 GameObject::~GameObject() { myGame = nullptr; }
 

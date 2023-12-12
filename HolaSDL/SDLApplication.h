@@ -1,12 +1,16 @@
 #pragma once
 #include "texture.h"
+#include "FileNotFoundError.h"
+#include "SDLError.h"
 
 
 using namespace std;
 const string textureRoot = "..\\images";
 
 // Constantes
-constexpr int NUM_TEXTURES = 17;
+constexpr int NUM_TEXTURES = 16,
+			  WIN_WIDTH = 800,
+			  WIN_HEIGHT = 600;
 
 enum TextureName {
 	Stars,
@@ -16,7 +20,15 @@ enum TextureName {
 	UFOs,
 	Numbers,
 	MainMenu,
-	Cargar
+	Cargar,
+	Codigo,
+	Continuar,
+	Over,
+	Guardar,
+	Ganado,
+	Nueva,
+	Salir,
+	Volver
 };
 
 class SDLApplication
@@ -45,7 +57,6 @@ private:
 		img {"\\guardarPartida.png", 1, 1},
 		img {"\\hasGanado.png", 1, 1},
 		img {"\\nuevaPartida.png", 1, 1},
-		img {"\\numbers.png", 1, 1},
 		img {"\\salir.png", 1, 1},
 		img {"\\volverAlMenu.png", 1, 1}
 	};
@@ -53,9 +64,10 @@ private:
 	SDL_Window* window = nullptr;
 	SDL_Renderer* renderer = nullptr;
 
-	Texture* textures[NUM_TEXTURES];
+	Texture* auxTex[NUM_TEXTURES];
 
 public:
+	SDLApplication();
 	Texture* getTexture(TextureName name) const;
 };
 

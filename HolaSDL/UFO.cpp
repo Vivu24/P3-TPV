@@ -3,7 +3,7 @@
 #include "checkML.h"
 
 // Constructora
-UFO::UFO(SDLApplication* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, int s, int cd)
+UFO::UFO(PlayState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, int s, int cd)
 	: SceneObject(game, texture, pos, w, h, l, f, c), currentState(s), hideTime(cd) {};
 
 // Movimiento

@@ -20,7 +20,7 @@ protected:
 
 public:
 	SceneObject();
-	SceneObject(SDLApplication* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c);
+	SceneObject(PlayState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c);
 
 	virtual bool Hit(SDL_Rect rect, const char* c);
 	void setListIterator(std::list<SceneObject*>::iterator it);

@@ -3,7 +3,7 @@
 #include "checkML.h"
 
 // Constructora
-Mothership::Mothership(SDLApplication* game) : GameObject(game) {};
+Mothership::Mothership(PlayState* game) : GameObject(game) {};
 
 // Update
 void Mothership::Update() {

@@ -4,20 +4,21 @@
 
 using namespace std;
 
-class SDLApplication;
+class PlayState;
 
 class GameObject
 {
 protected:
 
-	SDLApplication* myGame;
+	PlayState* myGame;
 
 protected:
 
 	GameObject();
-	GameObject(SDLApplication* game);
+	GameObject(PlayState* game);
 	virtual ~GameObject();
 
+public:
 	virtual void Render() const = 0;
 	virtual void Update() = 0;
 	virtual void Save(ostream& out) const = 0;

@@ -5,7 +5,7 @@
 using namespace std;
 
 // Constructora
-Bunker::Bunker(SDLApplication* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c) :
+Bunker::Bunker(PlayState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c) :
 	SceneObject(game, texture, pos, w, h, l, f, c) {};
 
 // Render

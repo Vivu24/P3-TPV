@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class SDLApplication;
+class PlayState;
 
 class Mothership : public GameObject
 {
@@ -31,7 +31,7 @@ private:
 	void Render() const override;
 
 public:
-	Mothership(SDLApplication* game);
+	Mothership(PlayState* game);
 
 	void alienDied();
 	void alienLanded();
