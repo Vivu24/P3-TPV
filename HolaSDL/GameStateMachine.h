@@ -5,9 +5,9 @@
 class GameStateMachine
 {
 private:
-	stack<GameState*> myStates;
+	stack<GameState*> myState;
 
-	void PushState(GameState* state) const;
+	void PushState(GameState* state) /*const*/;
 	void ReplaceSatate(GameState* state);
 	void PopState();
 
