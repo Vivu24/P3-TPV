@@ -1,8 +1,8 @@
 /**
- * Lista de objetos con eliminación eficiente.
+ * Lista de objetos con eliminaciÃ³n eficiente.
  *
  * @file gameList.h
- * @author Rubén Rubio
+ * @author RubÃ©n Rubio
  * @date TPV1 2023
  */
 
@@ -12,47 +12,47 @@
 #include <cassert>
 #include <vector>
 
- /**
-  * Lista de objetos que guardan una referencia opaca a su posición en la lista
-  * para borrarse eficientemente. Los métodos de inserción de la lista fijan esa
-  * referencia, para lo que la clase @c T debe proporcionar un método
-  * @c setListAnchor que reciba un objeto de tipo @c GameList::anchor.
-  *
-  * @tparam T Tipo de los objetos almacenados (sin puntero, aunque los objetos
-  * se almacenan como punteros).
-  * @tparam owns Si la lista es propietaria de los objetos y se encarga de liberarlos
-  * cuando se eliminan.
-  */
+/**
+ * Lista de objetos que guardan una referencia opaca a su posiciÃ³n en la lista
+ * para borrarse eficientemente. Los mÃ©todos de inserciÃ³n de la lista fijan esa
+ * referencia, para lo que la clase @c T debe proporcionar un mÃ©todo
+ * @c setListAnchor que reciba un objeto de tipo @c GameList::anchor.
+ *
+ * @tparam T Tipo de los objetos almacenados (sin puntero, aunque los objetos
+ * se almacenan como punteros).
+ * @tparam owns Si la lista es propietaria de los objetos y se encarga de liberarlos
+ * cuando se eliminan.
+ */
 template<typename T, bool owns = false>
 class GameList
 {
 	/// Nodo de la lista doblemente enlazada
 	struct Node
 	{
-		Node* prev, * next;
+		Node *prev, *next;
 		T* elem;     ///< Elemento
-		bool active; ///< Si está activo o ha sido eliminado
+		bool active; ///< Si estÃ¡ activo o ha sido eliminado
 
 		Node(T* elem, Node* base)
-			: elem(elem)
-			, active(true)
+		  : elem(elem)
+		  , active(true)
 		{
 			linkAfter(base);
 		}
 
 		Node()
-			: prev(this)
-			, next(this)
-			, elem(nullptr)
-			, active(true)
+		  : prev(this)
+		  , next(this)
+		  , elem(nullptr)
+		  , active(true)
 		{
 		}
 
 		~Node()
 		{
-			// if constexpr es un if que se evalúa en tiempo de compilación
+			// if constexpr es un if que se evalÃºa en tiempo de compilaciÃ³n
 			// (si la instancia de la plantilla es propietaria de sus objetos
-			// el programa compilado incluirá la eliminación de estos)
+			// el programa compilado incluirÃ¡ la eliminaciÃ³n de estos)
 			if constexpr (owns) {
 				delete elem;
 			}
@@ -78,10 +78,10 @@ class GameList
 	// La palabra clave mutable aplicada a un atributo indica que este se puede
 	// modificar incluso en funciones constantes. En esta clase todos los
 	// atributos son mutables porque la estructura interna de la lista se modifica
-	// en las operaciones de lectura (i.e. con los iteradores), pero no así
+	// en las operaciones de lectura (i.e. con los iteradores), pero no asÃ­
 	// su contenido abstracto (es decir, desde que erase elimina un objeto este
-	// deja de estar disponible, pero su eliminación se realiza cuando no haya
-	// ningún iterador apuntando a la lista).
+	// deja de estar disponible, pero su eliminaciÃ³n se realiza cuando no haya
+	// ningÃºn iterador apuntando a la lista).
 
 	/// Nodo fantasma que da acceso a la lista
 	mutable Node ghostNode;
@@ -90,7 +90,7 @@ class GameList
 	/// Numero de iteradores activos sobre la estructura
 	mutable int numIterators;
 
-	/// Número de elementos en la lista
+	/// NÃºmero de elementos en la lista
 	std::size_t elemCount;
 
 	/// Elimina de la lista definitiva los objetos pendientes de ser eliminados
@@ -105,7 +105,7 @@ class GameList
 
 	Node* nextActive(Node* node) const
 	{
-		// Confía en que el nodo fantasma es activo
+		// ConfÃ­a en que el nodo fantasma es activo
 		while (!node->active)
 			node = node->next;
 		return node;
@@ -113,7 +113,7 @@ class GameList
 
 	Node* prevActive(Node* node) const
 	{
-		// Confía en que el nodo fantasma es activo
+		// ConfÃ­a en que el nodo fantasma es activo
 		while (!node->active)
 			node = node->prev;
 		return node;
@@ -123,29 +123,29 @@ public:
 	/// La referencia que permite borrar elementos de la lista
 	using anchor = Node*;
 
-	/// Crea una lista inicialmente vacía
+	/// Crea una lista inicialmente vacÃ­a
 	GameList()
-		: numIterators(0)
-		, elemCount(0)
+	  : numIterators(0)
+	  , elemCount(0)
 	{
 	}
 
 	/// Destruye todos los objetos de la lista si era propietaria de ellos
 	~GameList() { clear(); }
 
-	/// Número de elementos en la lista
+	/// NÃºmero de elementos en la lista
 	std::size_t size() const { return elemCount; }
 
-	/// ¿La lista es vacía?
+	/// Â¿La lista es vacÃ­a?
 	bool empty() const { return elemCount == 0; }
 
 	/// Impide copiar la lista (los objetos tienen referencias a ella)
 	GameList(const GameList& other) = delete;
 
-	/// Añade un nuevo objeto al principio de la lista y fija su iterador
+	/// AÃ±ade un nuevo objeto al principio de la lista y fija su iterador
 	void push_front(T* value)
 	{
-		// Comprobamos en depuración que no se insertan valores nulos
+		// Comprobamos en depuraciÃ³n que no se insertan valores nulos
 		assert(value != nullptr);
 
 		Node* node = new Node(value, &ghostNode);
@@ -153,10 +153,10 @@ public:
 		++elemCount;
 	}
 
-	/// Añade un nuevo objeto al final de la lista y fija su iterador
+	/// AÃ±ade un nuevo objeto al final de la lista y fija su iterador
 	void push_back(T* value)
 	{
-		// Comprobamos en depuración que no se insertan valores nulos
+		// Comprobamos en depuraciÃ³n que no se insertan valores nulos
 		assert(value != nullptr);
 
 		Node* node = new Node(value, ghostNode.prev);
@@ -164,7 +164,7 @@ public:
 		++elemCount;
 	}
 
-	/// Vacía la lista y destruye todos sus objetos si era propietaria de ellos
+	/// VacÃ­a la lista y destruye todos sus objetos si era propietaria de ellos
 	void clear()
 	{
 		Node* node = ghostNode.next;
@@ -180,7 +180,7 @@ public:
 		ghostNode.prev = &ghostNode;
 		ghostNode.next = &ghostNode;
 
-		// El tamaño es cero
+		// El tamaÃ±o es cero
 		elemCount = 0;
 
 		toBeRemoved.clear();
@@ -200,7 +200,7 @@ public:
 			toBeRemoved.push_back(it);
 		}
 
-		// Reduce el número de elementos
+		// Reduce el nÃºmero de elementos
 		--elemCount;
 	}
 
@@ -214,8 +214,8 @@ public:
 		Node* node;
 
 		iterator(const GameList& list, Node* node)
-			: list(list)
-			, node(node)
+		  : list(list)
+		  , node(node)
 		{
 			++list.numIterators;
 		}
@@ -226,15 +226,15 @@ public:
 
 		// Los iteradores se pueden copiar
 		iterator(const iterator& otro)
-			: list(otro.list)
-			, node(otro.node)
+		  : list(otro.list)
+		  , node(otro.node)
 		{
 			++list.numIterators;
 		}
 
 		~iterator()
 		{
-			// Si no hay ningún iterador apuntando a la lista
+			// Si no hay ningÃºn iterador apuntando a la lista
 			// aplica las eliminaciones pendientes
 			if (--list.numIterators == 0)
 				list.removePending();
@@ -243,7 +243,7 @@ public:
 		/// Accede al elemento apuntado por el iterador
 		T& operator*() const { return *node->elem; }
 
-		// Define los operadores de comparación de iteradores (<=> basta en C++20)
+// Define los operadores de comparaciÃ³n de iteradores (<=> basta en C++20)
 #ifdef __cpp_lib_three_way_comparison
 		auto operator<=>(const iterator& other) { return node <=> other.node; }
 #else
@@ -271,7 +271,7 @@ public:
 	public:
 		using iterator::iterator;
 
-		/// Avanza el iterador (en dirección inversa)
+		/// Avanza el iterador (en direcciÃ³n inversa)
 		iterator& operator++()
 		{
 			// Se salta los elementos que han sido eliminados

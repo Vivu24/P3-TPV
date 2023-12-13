@@ -3,14 +3,17 @@
 #include "GameObject.h"
 #include <ostream>
 #include <iostream>
+#include "PlayState.h"
 
 using namespace std;
 
+class GameState;
 class PlayState;
 
 class Mothership : public GameObject
 {
 private:
+	PlayState* myGame;
 	const int levelDescension = 20;
 	bool cantMove = false;
 	int level = 0,
@@ -31,7 +34,7 @@ private:
 	void Render() const override;
 
 public:
-	Mothership(PlayState* game);
+	Mothership(GameState* game);
 
 	void alienDied();
 	void alienLanded();

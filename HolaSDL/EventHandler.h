@@ -2,7 +2,7 @@
 #include <SDL.h>
 class EventHandler
 {
-protected:
+public:
 	virtual void HandleEvent(const SDL_Event& event) = 0;
 };
 

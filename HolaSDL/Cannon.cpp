@@ -1,10 +1,11 @@
 #include "checkML.h"
 #include "Cannon.h"
-#include "Game.h"
+#include "PlayState.h"
+#include "SDLApplication.h"
 
 
 // Constructora
-Cannon::Cannon(PlayState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, int cd) :
+Cannon::Cannon(GameState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, int cd) :
 	SceneObject(game, texture, pos, w, h, l, f, c), cooldown(cd){
 	currentCooldown = cooldown;
 }
@@ -69,8 +70,8 @@ bool Cannon::Hit(SDL_Rect rect, const char* c) {
 	if (SDL_HasIntersection(&rect, &auxRect) && c == "r") {
 		--myLifes;
 		if (myLifes <= 0) {
-			myGame->HasDied(myIterator);
-			++myIterator;
+			myGame->HasDied(myAnchor);
+			++myAnchor;
 		}
 		hasHit = true;
 	}

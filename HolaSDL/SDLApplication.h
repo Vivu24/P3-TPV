@@ -2,6 +2,9 @@
 #include "texture.h"
 #include "FileNotFoundError.h"
 #include "SDLError.h"
+#include "GameStateMachine.h"
+#include "gameList.h"
+#include "MainMenuState.h"
 
 
 using namespace std;
@@ -64,10 +67,23 @@ private:
 	SDL_Window* window = nullptr;
 	SDL_Renderer* renderer = nullptr;
 
+	GameStateMachine* machine;
+
 	Texture* auxTex[NUM_TEXTURES];
+
+	GameList<EventHandler> gaes;
+
+private:
+	void Update();
+	void Render() const;
 
 public:
 	SDLApplication();
+
+	void Run();
+
+	SDL_Renderer* GetRenderer() { return renderer; }
 	Texture* getTexture(TextureName name) const;
+	void HandleEvents();
 };
 

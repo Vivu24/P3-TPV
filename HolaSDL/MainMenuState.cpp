@@ -4,7 +4,7 @@
 const std::string MainMenuState::s_menuID = "MENU";
 
 void MainMenuState::Render() const {
-	PlayState* myApp = getGame();
+	SDLApplication* myApp = getGame();
 	myApp->getTexture(TextureName::MainMenu)->render();
 
 	for (GameObject& obj : myList) {
@@ -14,18 +14,14 @@ void MainMenuState::Render() const {
 
 void MainMenuState::Update() {}
 
-void MainMenuState::HandleEvent(const SDL_Event&) {}
+void MainMenuState::HandleEvent(const SDL_Event& e) {}
 
-void MainMenuState::Save(ostream&) const {}
+bool MainMenuState::onEnter() { return; }
 
-void MainMenuState::HasDied(GameList<GameObject, true>::anchor) {}
-
-bool MainMenuState::onEnter() {}
-
-bool MainMenuState::onExit() {}
+bool MainMenuState::onExit() { return; }
 
 void MainMenuState::CreateButtons() {
-	PlayState* myApp = getGame();
+	SDLApplication* myApp = getGame();
 	GameObject* obj = new Button(myApp->getTexture(TextureName::Cargar));
 	addObject(obj);
 	obj = new Button(myApp->getTexture(TextureName::Nueva));

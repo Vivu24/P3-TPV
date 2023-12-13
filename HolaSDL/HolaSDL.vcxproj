@@ -80,7 +80,6 @@
     <ClCompile Include="MainMenuState.cpp" />
     <ClCompile Include="PauseState.cpp" />
     <ClCompile Include="SDLApplication.cpp" />
-    <ClCompile Include="GameList.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameState.cpp" />
     <ClCompile Include="InvadersError.cpp" />
@@ -104,11 +103,11 @@
     <ClInclude Include="EventHandler.h" />
     <ClInclude Include="FileFormatError.h" />
     <ClInclude Include="FileNotFoundError.h" />
+    <ClInclude Include="gameList.h" />
     <ClInclude Include="GameStateMachine.h" />
     <ClInclude Include="MainMenuState.h" />
     <ClInclude Include="PauseState.h" />
     <ClInclude Include="SDLApplication.h" />
-    <ClInclude Include="GameList.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="InvadersError.h" />

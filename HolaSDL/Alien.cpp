@@ -1,9 +1,10 @@
 #include "checkML.h"
 #include "Alien.h"
-#include "Game.h"
+#include "SDLApplication.h"
+#include "Mothership.h"
 
 // Constructora
-Alien::Alien(PlayState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, Mothership* mama) :
+Alien::Alien(GameState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, Mothership* mama) :
 	SceneObject(game, texture, pos, w, h, l, f, c), myMama(mama) {
 	if (f == 0) points = 30;
 	else if (f == 1) points = 20;
@@ -26,7 +27,7 @@ bool Alien::Hit(SDL_Rect rect, const char* c) {
 		--myLifes;
 		if (myLifes <= 0) {
 			myGame->addPoints(points);
-			myGame->HasDied(myIterator);
+			myGame->HasDied(myAnchor);
 			myMama->alienDied();
 		}
 		hasHit = true;

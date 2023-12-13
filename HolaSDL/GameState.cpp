@@ -1,4 +1,5 @@
 #include "GameState.h"
+#include "SDLApplication.h"
 
 void GameState::Render() const {};
 

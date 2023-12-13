@@ -1,10 +1,11 @@
 #include "SceneObject.h"
-#include "Game.h"
+#include "SDLApplication.h"
 #include "checkML.h"
+#include "PlayState.h"
 
 // Constructora
-SceneObject::SceneObject(PlayState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c)
-	: GameObject(game), myTexture(texture), myPosition(pos), myWidth(w), myHeight(h), myLifes(l), myFil(f), myCol(c) {}
+SceneObject::SceneObject(GameState* state, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c)
+	: GameObject(state), myTexture(texture), myPosition(pos), myWidth(w), myHeight(h), myLifes(l), myFil(f), myCol(c) {}
 
 // Render
 void SceneObject::Render() const {
@@ -23,15 +24,10 @@ bool SceneObject::Hit(SDL_Rect rect, const char* c) {
 	// Comprueba su colisión y si no tiene vidas lo elimina
 	if (SDL_HasIntersection(&rect, &auxRect)) {
 		--myLifes;
-		if (myLifes <= 0) myGame->HasDied(myIterator);
+		if (myLifes <= 0) myGame->HasDied(myAnchor);
 		hasHit = true;
 	}
 	return hasHit;
-}
-
-// Set del iterador del objeto
-void SceneObject::setListIterator(std::list<SceneObject*>::iterator it) {
-	myIterator = it;
 }
 
 // Guardado

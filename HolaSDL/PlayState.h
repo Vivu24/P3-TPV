@@ -17,21 +17,19 @@
 #include <cstdint>
 #include <list>
 #include "UFO.h"
-#include "Mothership.h"
 #include "SDLError.h"
 #include "FileFormatError.h"
 #include "FileNotFoundError.h"
-#include "GameList.h"
+#include "gameList.h"
 
 using namespace std;
-const string textureRoot = "..\\images";
 
 // Constantes
-constexpr int  WIN_WIDTH = 800,
-WIN_HEIGHT = 600,
-NUM_TEXTURES = 6,
-PLAYER_VELOCITY = 4,
-FRAME_RATE = 30;
+constexpr int PLAYER_VELOCITY = 4,
+			  FRAME_RATE = 30;
+
+class Mothership;
+class SDLApplication;
 
 class PlayState :
 	public GameState
@@ -52,20 +50,20 @@ private:
 
 	Vector2D<int> direction = Vector2D(1, 0);
 
-	GameList<SceneObject> objectElems;
+	GameList<SceneObject, false> objectElems;
 	list<SceneObject*> objectToDelete;
 	Mothership* mama;
 	Cannon* player;
 
 public:
-	PlayState();
+	PlayState(SDLApplication* app);
 	~PlayState();
 
 	void Run();
 	void FireLaser(Point2D<int> position, const char* color);
 	int GetRandomRange(int min, int max);
 	bool Damage(SDL_Rect rect, const char* c);
-	void HasDied(const GameList<SceneObject*>::iterator& it);
+	void HasDied(GameList<GameObject, true>::anchor it);
 	void addPoints(int p);
 
 	// Getters

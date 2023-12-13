@@ -1,12 +1,13 @@
 #include "checkML.h"
+#include "SDLApplication.h"
 #include "PlayState.h"
+#include "Mothership.h"
 
 const std::string PlayState::s_playID = "PLAY";
 
 // Constructora
-PlayState::PlayState() {
+PlayState::PlayState(SDLApplication* app) : GameState(app) {
 	mama = new Mothership(this);
-
 	Menu();
 }
 
@@ -68,7 +69,7 @@ void PlayState::Run() {
 };
 
 // Render general
-void PlayState::Render() {
+void PlayState::Render() const {
 	getGame()->getTexture(TextureName::Stars)->render();
 
 	// Renderizado de todos los objetos de escena
@@ -76,7 +77,7 @@ void PlayState::Render() {
 		obj.Render();
 	}
 	// Renderizado de la puntuación
-	RenderPoints();
+	//RenderPoints();
 
 	//SDL_RenderPresent(renderer);
 }
@@ -325,9 +326,9 @@ void PlayState::LoadMaps(string map) {
 }
 
 // Cuando un objeto ha de ser eliminado se añade a la lista de objetos a eliminar
-void PlayState::HasDied(const GameList<SceneObject*>::iterator& it) {
+void PlayState::HasDied(GameList<GameObject, true>::anchor it) {
 	if (it != objectElems.end()) {
-		objectToDelete.push_back(*it);
+		objectToDelete.push_back(it);
 	}
 }
 
@@ -355,8 +356,8 @@ void PlayState::Save(int k) {
 	ofstream out(fileName + to_string(k) + ".txt");
 
 	// Cada sceneObject se guarda con los datos necesarios en el flujo
-	for (auto i : objectElems) {
-		i.Save(out);
+	for (SceneObject &obj : objectElems) {
+		obj.Save(out);
 	}
 	// Guardado de la mothership
 	mama->Save(out);

@@ -1,9 +1,9 @@
 #include "ShooterAlien.h"
-#include "Game.h"
+#include "SDLApplication.h"
 #include "checkML.h"
 
 // Constructora
-ShooterAlien::ShooterAlien(PlayState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, Mothership* mama, int cd) :
+ShooterAlien::ShooterAlien(GameState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, Mothership* mama, int cd) :
 	Alien(game, texture, pos, w, h, l, f, c, mama), cooldown(cd) {
 	currentCooldown = cooldown;
 }

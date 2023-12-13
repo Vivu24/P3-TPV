@@ -2,17 +2,20 @@
 #include "GameState.h"
 #include <stack>
 
+class GameState;
+
 class GameStateMachine
 {
 private:
-	stack<GameState*> myState;
+	std::stack<GameState*> myState;
 
-	void PushState(GameState* state) /*const*/;
-	void ReplaceSatate(GameState* state);
-	void PopState();
-
+public:
 	void Update();
 	void Render() const;
 	void HandleEvent(const SDL_Event& event);
+
+	void PushState(GameState* state) /*const*/;
+	void ReplaceState(GameState* state);
+	void PopState();
 };
 

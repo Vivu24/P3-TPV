@@ -1,630 +1,112 @@
-﻿  Alien.cpp
+﻿  MainMenuState.cpp
 C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
 C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Alien.cpp(3,10): fatal  error C1083: No se puede abrir el archivo incluir: 'Game.h': No such file or directory
-  Bunker.cpp
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-  Button.cpp
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-  Cannon.cpp
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Cannon.cpp(3,10): fatal  error C1083: No se puede abrir el archivo incluir: 'Game.h': No such file or directory
-  EndState.cpp
-  EventHandler.cpp
-  FileFormatError.cpp
-  FileNotFoundError.cpp
-  MainMenuState.cpp
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\MainMenuState.h(8,10): error C2065: 'butt': identificador no declarado
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\MainMenuState.h(9,5): error C2062: tipo 'void' inesperado
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\MainMenuState.h(9,33): error C2143: error de sintaxis: falta '>' delante de ';'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\MainMenuState.h(9,33): error C2208: 'unknown-type': no se han definido miembros utilizando este tipo
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\MainMenuState.cpp(3,21): error C2509: 'Render': función miembro no declarada en 'MainMenuState'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\MainMenuState.h(4,7): message : vea la declaración de 'MainMenuState'
-  PauseState.cpp
-  SDLApplication.cpp
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-  GameList.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\MainMenuState.cpp(19,33): error C2561: 'MainMenuState::onEnter': la función debe devolver un valor
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\MainMenuState.cpp(19,21): message : vea la declaración de 'MainMenuState::onEnter'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\MainMenuState.cpp(21,32): error C2561: 'MainMenuState::onExit': la función debe devolver un valor
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\MainMenuState.cpp(21,21): message : vea la declaración de 'MainMenuState::onExit'
   GameObject.cpp
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-  GameState.cpp
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\GameState.cpp(13,33): error C2556: 'void GameState::getGame(void) const': la función sobrecargada solo se diferencia de 'SDLApplication *GameState::getGame(void) const' por el tipo de valor devuelto
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\GameState.h(25,18): message : vea la declaración de 'GameState::getGame'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\GameState.cpp(13,17): error C2040: 'GameState::getGame: 'void (void) const' se diferencia en los niveles de direccionamiento indirecto de 'SDLApplication *(void) const'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\GameState.cpp(13,17): error C2084: la función 'SDLApplication *GameState::getGame(void) const' ya tiene un cuerpo
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\GameState.h(25,18): message : vea la definición anterior de 'getGame'
-  InvadersError.cpp
-  Laser.cpp
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Laser.cpp(3,10): fatal  error C1083: No se puede abrir el archivo incluir: 'Game.h': No such file or directory
-  main.cpp
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\main.cpp(8,10): fatal  error C1083: No se puede abrir el archivo incluir: 'Game.h': No such file or directory
-  Mothership.cpp
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
   PlayState.cpp
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
 C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
 C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(40,27): error C2259: "SceneObject": no se puede crear una instancia de una clase abstract
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\SceneObject.h(8,7): message : vea la declaración de 'SceneObject'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(40,27): message : debido a los siguientes miembros:
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(40,27): message : 'void SceneObject::Update(void)': es abstracto
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\SceneObject.h(28,7): message : vea la declaración de 'SceneObject::Update'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(40,36): error C2440: 'delete': no se puede realizar la conversión de 'T' a 'void*'
-          with
-          [
-              T=SceneObject
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(40,36): message : No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(128,14): error C2664: 'void GameList<SceneObject,false>::erase(GameList<SceneObject,false>::Node *)': el argumento 1 no puede convertirse de 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>' a 'GameList<SceneObject,false>::Node *'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(128,35): message : No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\GameList.h(190,7): message : vea la declaración de 'GameList<SceneObject,false>::erase'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(128,14): message : al hacer coincidir la lista de argumentos '(std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>)'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(207,21): error C2672: 'prev': no se encontró una función sobrecargada que coincida
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xutility(1455,32): message : puede ser '_BidIt std::prev(_BidIt,iterator_traits<_Iter>::difference_type)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(207,21): message : No se pudo especializar la plantilla de función "_BidIt std::prev(_BidIt,iterator_traits<_Iter>::difference_type)"
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(207,21): message : Con los siguientes argumentos de plantilla:
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(207,21): message : '_BidIt=GameList<SceneObject,false>::forward_iterator'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(213,21): error C2672: 'prev': no se encontró una función sobrecargada que coincida
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xutility(1455,32): message : puede ser '_BidIt std::prev(_BidIt,iterator_traits<_Iter>::difference_type)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(213,21): message : No se pudo especializar la plantilla de función "_BidIt std::prev(_BidIt,iterator_traits<_Iter>::difference_type)"
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(213,21): message : Con los siguientes argumentos de plantilla:
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(213,21): message : '_BidIt=GameList<SceneObject,false>::forward_iterator'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,39): error C2440: 'inicializando': no se puede realizar la conversión de 'GameList<SceneObject,false>::forward_iterator' a 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,39): message : 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::_List_iterator':ninguna función sobrecargada pudo convertir todos los tipos de argumento
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\list(273,1): message : puede ser 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::_List_iterator(const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &)'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,39): message : 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::_List_iterator(const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &)': el argumento 1 no puede convertirse de 'GameList<SceneObject,false>::forward_iterator' a 'const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,58): message : Razón: no se puede realizar la conversión de 'GameList<SceneObject,false>::forward_iterator' a 'const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,58): message : No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\list(273,1): message : o       'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::_List_iterator(std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &&)'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,39): message : 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::_List_iterator(std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &&)': el argumento 1 no puede convertirse de 'GameList<SceneObject,false>::forward_iterator' a 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &&'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,58): message : Razón: no se puede realizar la conversión de 'GameList<SceneObject,false>::forward_iterator' a 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,58): message : No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,39): message : al hacer coincidir la lista de argumentos '(GameList<SceneObject,false>::forward_iterator)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): error C2679: '!=' binario: no se encontró un operador que adopte un operando en la parte derecha de tipo 'GameList<SceneObject,false>::forward_iterator' (o bien no existe una conversión aceptable)
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\list(202,21): message : puede ser 'bool std::_List_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::operator !=(const std::_List_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &) noexcept const'
-          with
-          [
-              _Ty=SceneObject *
-          ]
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): error C2679: '!=' binario: no se encontró un operador que adopte un operando en la parte derecha de tipo 'GameList<SceneObject,false>::forward_iterator' (o bien no existe una conversión aceptable)
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : puede ser 'built-in C++ operator!=(GameList<GameObject,true>::Node *, GameList<GameObject,true>::Node *)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\functional(1196,17): message : o       'bool std::operator !=(std::nullptr_t,const std::function<_Fty> &) noexcept'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(std::nullptr_t,const std::function<_Fty> &) noexcept": no se pudo deducir el argumento plantilla para "const std::function<_Fty> &" de "GameList<SceneObject,false>::forward_iterator"
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\functional(1191,17): message : o       'bool std::operator !=(const std::function<_Fty> &,std::nullptr_t) noexcept'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::function<_Fty> &,std::nullptr_t) noexcept": no se pudo deducir el argumento plantilla para "const std::function<_Fty> &" de "GameList<GameObject,true>::Node *"
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\unordered_map(919,17): message : o       'bool std::operator !=(const std::unordered_multimap<_Kty,_Ty,_Hasher,_Keyeq,_Alloc> &,const std::unordered_multimap<_Kty,_Ty,_Hasher,_Keyeq,_Alloc> &)'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::unordered_multimap<_Kty,_Ty,_Hasher,_Keyeq,_Alloc> &,const std::unordered_multimap<_Kty,_Ty,_Hasher,_Keyeq,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::unordered_multimap<_Kty,_Ty,_Hasher,_Keyeq,_Alloc> &" de "GameList<GameObject,true>::Node *"
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\unordered_map(548,17): message : o       'bool std::operator !=(const std::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc> &,const std::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc> &)'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc> &,const std::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc> &" de "GameList<GameObject,true>::Node *"
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\stack(180,17): message : o       'bool std::operator !=(const std::stack<_Ty,_Container> &,const std::stack<_Ty,_Container> &)'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::stack<_Ty,_Container> &,const std::stack<_Ty,_Container> &)": no se pudo deducir el argumento plantilla para "const std::stack<_Ty,_Container> &" de "GameList<GameObject,true>::Node *"
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\deque(1712,17): message : o       'bool std::operator !=(const std::deque<_Ty,_Alloc> &,const std::deque<_Ty,_Alloc> &)'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::deque<_Ty,_Alloc> &,const std::deque<_Ty,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::deque<_Ty,_Alloc> &" de "GameList<GameObject,true>::Node *"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\list(1883,17): message : o       'bool std::operator !=(const std::list<_Ty,_Alloc> &,const std::list<_Ty,_Alloc> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const std::list<_Ty,_Alloc> &,const std::list<_Ty,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::list<_Ty,_Alloc> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::list<_Ty,_Alloc> &,const std::list<_Ty,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::list<_Ty,_Alloc> &" de "GameList<GameObject,true>::Node *"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(2236,17): message : o       'bool std::operator !=(const std::vector<_Ty,_Alloc> &,const std::vector<_Ty,_Alloc> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const std::vector<_Ty,_Alloc> &,const std::vector<_Ty,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::vector<_Ty,_Alloc> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\iterator(496,17): message : o       'bool std::operator !=(const std::istreambuf_iterator<_Elem,_Traits> &,const std::istreambuf_iterator<_Elem,_Traits> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const std::istreambuf_iterator<_Elem,_Traits> &,const std::istreambuf_iterator<_Elem,_Traits> &)": no se pudo deducir el argumento plantilla para "const std::istreambuf_iterator<_Elem,_Traits> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\iterator(314,17): message : o       'bool std::operator !=(const std::istream_iterator<_Ty,_Elem,_Traits,_Diff> &,const std::istream_iterator<_Ty,_Elem,_Traits,_Diff> &) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const std::istream_iterator<_Ty,_Elem,_Traits,_Diff> &,const std::istream_iterator<_Ty,_Elem,_Traits,_Diff> &) noexcept": no se pudo deducir el argumento plantilla para "const std::istream_iterator<_Ty,_Elem,_Traits,_Diff> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::vector<_Ty,_Alloc> &,const std::vector<_Ty,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::vector<_Ty,_Alloc> &" de "GameList<GameObject,true>::Node *"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(3577,17): message : o       'bool std::operator !=(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &) noexcept": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "GameList<SceneObject,false>::forward_iterator"
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &) noexcept": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "GameList<SceneObject,false>::forward_iterator"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(3572,17): message : o       'bool std::operator !=(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t) noexcept": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t) noexcept": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "GameList<GameObject,true>::Node *"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(3519,17): message : o       'bool std::operator !=(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "GameList<GameObject,true>::Node *"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(1942,17): message : o       'bool std::operator !=(std::nullptr_t,const std::shared_ptr<_Ty> &) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(std::nullptr_t,const std::shared_ptr<_Ty> &) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "GameList<SceneObject,false>::forward_iterator"
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(std::nullptr_t,const std::shared_ptr<_Ty> &) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "GameList<SceneObject,false>::forward_iterator"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(1937,17): message : o       'bool std::operator !=(const std::shared_ptr<_Ty> &,std::nullptr_t) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const std::shared_ptr<_Ty> &,std::nullptr_t) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::shared_ptr<_Ty> &,std::nullptr_t) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "GameList<GameObject,true>::Node *"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(1895,17): message : o       'bool std::operator !=(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty0> &) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty0> &) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty0> &) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "GameList<GameObject,true>::Node *"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(5050,17): message : o       'bool std::operator !=(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )": no se pudo deducir el argumento plantilla para "const std::basic_string<_Elem,_Traits,_Alloc> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )": no se pudo deducir el argumento plantilla para "const std::basic_string<_Elem,_Traits,_Alloc> &" de "GameList<GameObject,true>::Node *"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(5045,17): message : o       'bool std::operator !=(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)": no se pudo deducir el argumento plantilla para "const _Elem *const " de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::basic_string<_Elem,_Traits,_Alloc> &" de "GameList<SceneObject,false>::forward_iterator"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(5039,17): message : o       'bool std::operator !=(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string<_Elem,_Traits,_Alloc> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string<_Elem,_Traits,_Alloc> &" de "GameList<GameObject,true>::Node *"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(1681,27): message : o       'bool std::operator !=(const std::basic_string_view<_Elem,_Traits>,const _Identity<std::basic_string_view<_Elem,_Traits>>::type) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const std::basic_string_view<_Elem,_Traits>,const _Identity<std::basic_string_view<_Elem,_Traits>>::type) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::basic_string_view<_Elem,_Traits>,const _Identity<std::basic_string_view<_Elem,_Traits>>::type) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "GameList<GameObject,true>::Node *"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(1675,27): message : o       'bool std::operator !=(const _Identity<std::basic_string_view<_Elem,_Traits>>::type,const std::basic_string_view<_Elem,_Traits>) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const _Identity<std::basic_string_view<_Elem,_Traits>>::type,const std::basic_string_view<_Elem,_Traits>) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "GameList<SceneObject,false>::forward_iterator"
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const _Identity<std::basic_string_view<_Elem,_Traits>>::type,const std::basic_string_view<_Elem,_Traits>) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "GameList<SceneObject,false>::forward_iterator"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(1669,27): message : o       'bool std::operator !=(const std::basic_string_view<_Elem,_Traits>,const std::basic_string_view<_Elem,_Traits>) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const std::basic_string_view<_Elem,_Traits>,const std::basic_string_view<_Elem,_Traits>) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::basic_string_view<_Elem,_Traits>,const std::basic_string_view<_Elem,_Traits>) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "GameList<GameObject,true>::Node *"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\tuple(889,27): message : o       'bool std::operator !=(const std::tuple<_Types...> &,const std::tuple<_Types...> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const std::tuple<_Types...> &,const std::tuple<_Types...> &)": no se pudo deducir el argumento plantilla para "const std::tuple<_Types...> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::tuple<_Types...> &,const std::tuple<_Types...> &)": no se pudo deducir el argumento plantilla para "const std::tuple<_Types...> &" de "GameList<GameObject,true>::Node *"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xmemory(1040,17): message : o       'bool std::operator !=(const std::allocator<_Ty> &,const std::allocator<_Other> &) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const std::allocator<_Ty> &,const std::allocator<_Other> &) noexcept": no se pudo deducir el argumento plantilla para "const std::allocator<_Ty> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xutility(4279,30): message : o       'bool std::operator !=(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)": no se pudo deducir el argumento plantilla para "const std::move_iterator<_Iter> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xutility(1671,5): message : o       'bool std::operator !=(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)": no se pudo deducir el argumento plantilla para "const std::reverse_iterator<_BidIt> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\utility(499,27): message : o       'bool std::operator !=(const std::pair<_Ty1,_Ty2> &,const std::pair<_Uty1,_Uty2> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : "bool std::operator !=(const std::pair<_Ty1,_Ty2> &,const std::pair<_Uty1,_Uty2> &)": no se pudo deducir el argumento plantilla para "const std::pair<_Ty1,_Ty2> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(223,62): message : al hacer coincidir la lista de argumentos '(std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>, GameList<SceneObject,false>::forward_iterator)'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(334,40): error C2440: 'inicializando': no se puede realizar la conversión de 'GameList<SceneObject,false>::forward_iterator' a 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(334,40): message : 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::_List_iterator':ninguna función sobrecargada pudo convertir todos los tipos de argumento
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\list(273,1): message : puede ser 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::_List_iterator(const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &)'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(334,40): message : 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::_List_iterator(const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &)': el argumento 1 no puede convertirse de 'GameList<SceneObject,false>::forward_iterator' a 'const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(334,59): message : Razón: no se puede realizar la conversión de 'GameList<SceneObject,false>::forward_iterator' a 'const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(334,59): message : No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\list(273,1): message : o       'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::_List_iterator(std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &&)'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(334,40): message : 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::_List_iterator(std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &&)': el argumento 1 no puede convertirse de 'GameList<SceneObject,false>::forward_iterator' a 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &&'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(334,59): message : Razón: no se puede realizar la conversión de 'GameList<SceneObject,false>::forward_iterator' a 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(334,59): message : No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(334,40): message : al hacer coincidir la lista de argumentos '(GameList<SceneObject,false>::forward_iterator)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(335,36): error C2440: 'inicializando': no se puede realizar la conversión de 'T' a 'SceneObject *'
-          with
-          [
-              T=SceneObject
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(335,36): message : No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): error C2679: '!=' binario: no se encontró un operador que adopte un operando en la parte derecha de tipo 'GameList<SceneObject,false>::forward_iterator' (o bien no existe una conversión aceptable)
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\list(202,21): message : puede ser 'bool std::_List_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::operator !=(const std::_List_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &) noexcept const'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\list(1883,17): message : o       'bool std::operator !=(const std::list<_Ty,_Alloc> &,const std::list<_Ty,_Alloc> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const std::list<_Ty,_Alloc> &,const std::list<_Ty,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::list<_Ty,_Alloc> &" de "const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(2236,17): message : o       'bool std::operator !=(const std::vector<_Ty,_Alloc> &,const std::vector<_Ty,_Alloc> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const std::vector<_Ty,_Alloc> &,const std::vector<_Ty,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::vector<_Ty,_Alloc> &" de "const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::allocator<_Ty> &,const std::allocator<_Other> &) noexcept": no se pudo deducir el argumento plantilla para "const std::allocator<_Ty> &" de "GameList<GameObject,true>::Node *"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\iterator(496,17): message : o       'bool std::operator !=(const std::istreambuf_iterator<_Elem,_Traits> &,const std::istreambuf_iterator<_Elem,_Traits> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const std::istreambuf_iterator<_Elem,_Traits> &,const std::istreambuf_iterator<_Elem,_Traits> &)": no se pudo deducir el argumento plantilla para "const std::istreambuf_iterator<_Elem,_Traits> &" de "const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::istreambuf_iterator<_Elem,_Traits> &,const std::istreambuf_iterator<_Elem,_Traits> &)": no se pudo deducir el argumento plantilla para "const std::istreambuf_iterator<_Elem,_Traits> &" de "GameList<GameObject,true>::Node *"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\iterator(314,17): message : o       'bool std::operator !=(const std::istream_iterator<_Ty,_Elem,_Traits,_Diff> &,const std::istream_iterator<_Ty,_Elem,_Traits,_Diff> &) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const std::istream_iterator<_Ty,_Elem,_Traits,_Diff> &,const std::istream_iterator<_Ty,_Elem,_Traits,_Diff> &) noexcept": no se pudo deducir el argumento plantilla para "const std::istream_iterator<_Ty,_Elem,_Traits,_Diff> &" de "const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(3577,17): message : o       'bool std::operator !=(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &) noexcept": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "GameList<SceneObject,false>::forward_iterator"
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(3572,17): message : o       'bool std::operator !=(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t) noexcept": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(3519,17): message : o       'bool std::operator !=(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(1942,17): message : o       'bool std::operator !=(std::nullptr_t,const std::shared_ptr<_Ty> &) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(std::nullptr_t,const std::shared_ptr<_Ty> &) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "GameList<SceneObject,false>::forward_iterator"
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(1937,17): message : o       'bool std::operator !=(const std::shared_ptr<_Ty> &,std::nullptr_t) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const std::shared_ptr<_Ty> &,std::nullptr_t) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(1895,17): message : o       'bool std::operator !=(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty0> &) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty0> &) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(5050,17): message : o       'bool std::operator !=(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )": no se pudo deducir el argumento plantilla para "const std::basic_string<_Elem,_Traits,_Alloc> &" de "const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(5045,17): message : o       'bool std::operator !=(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)": no se pudo deducir el argumento plantilla para "const _Elem *const " de "const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(5039,17): message : o       'bool std::operator !=(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string<_Elem,_Traits,_Alloc> &" de "const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(1681,27): message : o       'bool std::operator !=(const std::basic_string_view<_Elem,_Traits>,const _Identity<std::basic_string_view<_Elem,_Traits>>::type) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const std::basic_string_view<_Elem,_Traits>,const _Identity<std::basic_string_view<_Elem,_Traits>>::type) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(1675,27): message : o       'bool std::operator !=(const _Identity<std::basic_string_view<_Elem,_Traits>>::type,const std::basic_string_view<_Elem,_Traits>) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const _Identity<std::basic_string_view<_Elem,_Traits>>::type,const std::basic_string_view<_Elem,_Traits>) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "GameList<SceneObject,false>::forward_iterator"
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(1669,27): message : o       'bool std::operator !=(const std::basic_string_view<_Elem,_Traits>,const std::basic_string_view<_Elem,_Traits>) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const std::basic_string_view<_Elem,_Traits>,const std::basic_string_view<_Elem,_Traits>) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\tuple(889,27): message : o       'bool std::operator !=(const std::tuple<_Types...> &,const std::tuple<_Types...> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const std::tuple<_Types...> &,const std::tuple<_Types...> &)": no se pudo deducir el argumento plantilla para "const std::tuple<_Types...> &" de "const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xmemory(1040,17): message : o       'bool std::operator !=(const std::allocator<_Ty> &,const std::allocator<_Other> &) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const std::allocator<_Ty> &,const std::allocator<_Other> &) noexcept": no se pudo deducir el argumento plantilla para "const std::allocator<_Ty> &" de "const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::istream_iterator<_Ty,_Elem,_Traits,_Diff> &,const std::istream_iterator<_Ty,_Elem,_Traits,_Diff> &) noexcept": no se pudo deducir el argumento plantilla para "const std::istream_iterator<_Ty,_Elem,_Traits,_Diff> &" de "GameList<GameObject,true>::Node *"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xutility(4279,30): message : o       'bool std::operator !=(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)": no se pudo deducir el argumento plantilla para "const std::move_iterator<_Iter> &" de "const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)": no se pudo deducir el argumento plantilla para "const std::move_iterator<_Iter> &" de "GameList<GameObject,true>::Node *"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xutility(1671,5): message : o       'bool std::operator !=(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)": no se pudo deducir el argumento plantilla para "const std::reverse_iterator<_BidIt> &" de "const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)": no se pudo deducir el argumento plantilla para "const std::reverse_iterator<_BidIt> &" de "GameList<GameObject,true>::Node *"
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\utility(499,27): message : o       'bool std::operator !=(const std::pair<_Ty1,_Ty2> &,const std::pair<_Uty1,_Uty2> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : "bool std::operator !=(const std::pair<_Ty1,_Ty2> &,const std::pair<_Uty1,_Uty2> &)": no se pudo deducir el argumento plantilla para "const std::pair<_Ty1,_Ty2> &" de "const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : "bool std::operator !=(const std::pair<_Ty1,_Ty2> &,const std::pair<_Uty1,_Uty2> &)": no se pudo deducir el argumento plantilla para "const std::pair<_Ty1,_Ty2> &" de "GameList<GameObject,true>::Node *"
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(330,6): message : al hacer coincidir la lista de argumentos '(GameList<GameObject,true>::Node *, GameList<SceneObject,false>::forward_iterator)'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(331,17): error C2665: 'std::list<SceneObject *,std::allocator<SceneObject *>>::push_back':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\list(1258,10): message : puede ser 'void std::list<SceneObject *,std::allocator<SceneObject *>>::push_back(const _Ty &)'
           with
           [
               _Ty=SceneObject *
           ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(347,6): message : al hacer coincidir la lista de argumentos '(const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>, GameList<SceneObject,false>::forward_iterator)'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(331,17): message : 'void std::list<SceneObject *,std::allocator<SceneObject *>>::push_back(const _Ty &)': el argumento 1 no puede convertirse de 'GameList<GameObject,true>::Node *' a 'const _Ty &'
           with
           [
               _Ty=SceneObject *
           ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,39): error C2440: 'inicializando': no se puede realizar la conversión de 'GameList<SceneObject,false>::forward_iterator' a 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(331,28): message : Razón: no se puede realizar la conversión de 'GameList<GameObject,true>::Node *' a 'const _Ty'
           with
           [
               _Ty=SceneObject *
           ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,39): message : 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::_List_iterator':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(331,28): message : Los tipos señalados no están relacionados; la conversión requiere reinterpret_cast, conversión de estilo de C o conversión de estilo de función entre paréntesis
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\list(973,10): message : o       'void std::list<SceneObject *,std::allocator<SceneObject *>>::push_back(_Ty &&)'
           with
           [
               _Ty=SceneObject *
           ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\list(273,1): message : puede ser 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::_List_iterator(const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &)'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(331,17): message : 'void std::list<SceneObject *,std::allocator<SceneObject *>>::push_back(_Ty &&)': el argumento 1 no puede convertirse de 'GameList<GameObject,true>::Node *' a '_Ty &&'
           with
           [
               _Ty=SceneObject *
           ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,39): message : 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::_List_iterator(const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &)': el argumento 1 no puede convertirse de 'GameList<SceneObject,false>::forward_iterator' a 'const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(331,28): message : Razón: no se puede realizar la conversión de 'GameList<GameObject,true>::Node *' a '_Ty'
           with
           [
               _Ty=SceneObject *
           ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,58): message : Razón: no se puede realizar la conversión de 'GameList<SceneObject,false>::forward_iterator' a 'const std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,58): message : No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\list(273,1): message : o       'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::_List_iterator(std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &&)'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,39): message : 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::_List_iterator(std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &&)': el argumento 1 no puede convertirse de 'GameList<SceneObject,false>::forward_iterator' a 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &&'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,58): message : Razón: no se puede realizar la conversión de 'GameList<SceneObject,false>::forward_iterator' a 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,58): message : No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,39): message : al hacer coincidir la lista de argumentos '(GameList<SceneObject,false>::forward_iterator)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): error C2679: '!=' binario: no se encontró un operador que adopte un operando en la parte derecha de tipo 'GameList<SceneObject,false>::forward_iterator' (o bien no existe una conversión aceptable)
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\list(202,21): message : puede ser 'bool std::_List_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::operator !=(const std::_List_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &) noexcept const'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\list(1883,17): message : o       'bool std::operator !=(const std::list<_Ty,_Alloc> &,const std::list<_Ty,_Alloc> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const std::list<_Ty,_Alloc> &,const std::list<_Ty,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::list<_Ty,_Alloc> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(2236,17): message : o       'bool std::operator !=(const std::vector<_Ty,_Alloc> &,const std::vector<_Ty,_Alloc> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const std::vector<_Ty,_Alloc> &,const std::vector<_Ty,_Alloc> &)": no se pudo deducir el argumento plantilla para "const std::vector<_Ty,_Alloc> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\iterator(496,17): message : o       'bool std::operator !=(const std::istreambuf_iterator<_Elem,_Traits> &,const std::istreambuf_iterator<_Elem,_Traits> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const std::istreambuf_iterator<_Elem,_Traits> &,const std::istreambuf_iterator<_Elem,_Traits> &)": no se pudo deducir el argumento plantilla para "const std::istreambuf_iterator<_Elem,_Traits> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\iterator(314,17): message : o       'bool std::operator !=(const std::istream_iterator<_Ty,_Elem,_Traits,_Diff> &,const std::istream_iterator<_Ty,_Elem,_Traits,_Diff> &) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const std::istream_iterator<_Ty,_Elem,_Traits,_Diff> &,const std::istream_iterator<_Ty,_Elem,_Traits,_Diff> &) noexcept": no se pudo deducir el argumento plantilla para "const std::istream_iterator<_Ty,_Elem,_Traits,_Diff> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(3577,17): message : o       'bool std::operator !=(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &) noexcept": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "GameList<SceneObject,false>::forward_iterator"
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(3572,17): message : o       'bool std::operator !=(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t) noexcept": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(3519,17): message : o       'bool std::operator !=(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)": no se pudo deducir el argumento plantilla para "const std::unique_ptr<_Ty,_Dx> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(1942,17): message : o       'bool std::operator !=(std::nullptr_t,const std::shared_ptr<_Ty> &) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(std::nullptr_t,const std::shared_ptr<_Ty> &) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "GameList<SceneObject,false>::forward_iterator"
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(1937,17): message : o       'bool std::operator !=(const std::shared_ptr<_Ty> &,std::nullptr_t) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const std::shared_ptr<_Ty> &,std::nullptr_t) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(1895,17): message : o       'bool std::operator !=(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty0> &) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty0> &) noexcept": no se pudo deducir el argumento plantilla para "const std::shared_ptr<_Ty> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(5050,17): message : o       'bool std::operator !=(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )": no se pudo deducir el argumento plantilla para "const std::basic_string<_Elem,_Traits,_Alloc> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(5045,17): message : o       'bool std::operator !=(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)": no se pudo deducir el argumento plantilla para "const _Elem *const " de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(5039,17): message : o       'bool std::operator !=(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string<_Elem,_Traits,_Alloc> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(1681,27): message : o       'bool std::operator !=(const std::basic_string_view<_Elem,_Traits>,const _Identity<std::basic_string_view<_Elem,_Traits>>::type) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const std::basic_string_view<_Elem,_Traits>,const _Identity<std::basic_string_view<_Elem,_Traits>>::type) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(1675,27): message : o       'bool std::operator !=(const _Identity<std::basic_string_view<_Elem,_Traits>>::type,const std::basic_string_view<_Elem,_Traits>) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const _Identity<std::basic_string_view<_Elem,_Traits>>::type,const std::basic_string_view<_Elem,_Traits>) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "GameList<SceneObject,false>::forward_iterator"
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(1669,27): message : o       'bool std::operator !=(const std::basic_string_view<_Elem,_Traits>,const std::basic_string_view<_Elem,_Traits>) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const std::basic_string_view<_Elem,_Traits>,const std::basic_string_view<_Elem,_Traits>) noexcept": no se pudo deducir el argumento plantilla para "const std::basic_string_view<_Elem,_Traits>" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\tuple(889,27): message : o       'bool std::operator !=(const std::tuple<_Types...> &,const std::tuple<_Types...> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const std::tuple<_Types...> &,const std::tuple<_Types...> &)": no se pudo deducir el argumento plantilla para "const std::tuple<_Types...> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xmemory(1040,17): message : o       'bool std::operator !=(const std::allocator<_Ty> &,const std::allocator<_Other> &) noexcept'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const std::allocator<_Ty> &,const std::allocator<_Other> &) noexcept": no se pudo deducir el argumento plantilla para "const std::allocator<_Ty> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xutility(4279,30): message : o       'bool std::operator !=(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)": no se pudo deducir el argumento plantilla para "const std::move_iterator<_Iter> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xutility(1671,5): message : o       'bool std::operator !=(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)": no se pudo deducir el argumento plantilla para "const std::reverse_iterator<_BidIt> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\utility(499,27): message : o       'bool std::operator !=(const std::pair<_Ty1,_Ty2> &,const std::pair<_Uty1,_Uty2> &)'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : "bool std::operator !=(const std::pair<_Ty1,_Ty2> &,const std::pair<_Uty1,_Uty2> &)": no se pudo deducir el argumento plantilla para "const std::pair<_Ty1,_Ty2> &" de "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>"
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(355,62): message : al hacer coincidir la lista de argumentos '(std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>, GameList<SceneObject,false>::forward_iterator)'
-          with
-          [
-              _Ty=SceneObject *
-          ]
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(377,3): error C2819: el tipo 'SceneObject' no tiene un miembro sobrecargado 'operator ->'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\SceneObject.h(8,7): message : vea la declaración de 'SceneObject'
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(377,3): message : ¿deseaba utilizar '.' en su lugar?
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(377,4): error C2232: '->SceneObject::Save': el operando izquierdo tiene el tipo 'class'; utilice '.'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(331,28): message : Los tipos señalados no están relacionados; la conversión requiere reinterpret_cast, conversión de estilo de C o conversión de estilo de función entre paréntesis
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(331,17): message : al hacer coincidir la lista de argumentos '(GameList<GameObject,true>::Node *)'
   SceneObject.cpp
 C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
 C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\SceneObject.cpp(2,10): fatal  error C1083: No se puede abrir el archivo incluir: 'Game.h': No such file or directory
-  Generando código...
-  Compilando...
-  SDLError.cpp
-  ShooterAlien.cpp
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\ShooterAlien.cpp(2,10): fatal  error C1083: No se puede abrir el archivo incluir: 'Game.h': No such file or directory
-  texture.cpp
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.cpp(15,21): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.cpp(16,23): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.cpp(39,21): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.cpp(40,23): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
   UFO.cpp
 C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
 C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\UFO.cpp(2,10): fatal  error C1083: No se puede abrir el archivo incluir: 'Game.h': No such file or directory
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
   Generando código...

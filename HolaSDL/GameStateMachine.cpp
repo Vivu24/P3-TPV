@@ -2,20 +2,29 @@
 
 void GameStateMachine::PushState(GameState* state) /*const*/ {
 	myState.push(state);	
+    myState.top()->onEnter();
 }
 
-void GameStateMachine::ReplaceSatate(GameState* state) {
+void GameStateMachine::ReplaceState(GameState* state) {
     if (!myState.empty()) {
-        delete myState.top();
-        myState.pop();
+        if (myState.top()->getStateID() == state->getStateID()) return;
+
+        if (myState.top()->onExit()) {
+            myState.pop();
+            delete myState.top();
+        }
     }
+
     myState.push(state);
+    myState.top()->onEnter();
 }
 
 void GameStateMachine::PopState() {
     if (!myState.empty()) {
-        delete myState.top();
-        myState.pop();
+        if (myState.top()->onExit()) {
+            delete myState.top();
+            myState.pop();
+        }
     }
 }
 

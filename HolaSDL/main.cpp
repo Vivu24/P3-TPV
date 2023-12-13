@@ -6,6 +6,7 @@
 #include "Vector2D.h"
 #include <iostream>
 #include "MainMenuState.h"
+#include "SDLApplication.h"
 
 using namespace std;
 
@@ -22,6 +23,8 @@ int main(int argc, char* argv[])
 	
 	return 0;*/
 
-	//MainMenuState main = new MainMenuState();
-	//main.Render();
+	SDLApplication cacaolat2 = SDLApplication();
+	cacaolat2.Run();
+
+	return 0;
 }

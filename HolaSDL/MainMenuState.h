@@ -2,19 +2,18 @@
 #include "GameState.h"
 #include "Button.h"
 
-class MainMenuState :
-    public GameState
+class SDLApplication;
+
+class MainMenuState : public GameState
 {
 private:
     static const std::string s_menuID;
 
 public:
-    MainMenuState(PlayState* app) : GameState(app) {}
+    MainMenuState(SDLApplication* app) : GameState(app) {}
     void Render() const override;
     void Update() override;
-    void HandleEvent(const SDL_Event&) override;
-    void Save(ostream&) const override;
-    void HasDied(GameList<GameObject, true>::anchor) override;
+    void HandleEvent(const SDL_Event& e) override;
 
     bool onEnter() override;
     bool onExit() override;

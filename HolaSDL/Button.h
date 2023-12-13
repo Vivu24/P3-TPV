@@ -12,7 +12,7 @@ class Button :
 {
 private:
     Texture* myTexture;
-    list<Callback> myCallbacks;
+    std::list<Callback> myCallbacks;
 
 public:
     Button(Texture* tex);

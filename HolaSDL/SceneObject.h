@@ -4,10 +4,14 @@
 #include <SDL.h>
 #include "texture.h"
 #include <list>
+#include "gameList.h"
+
+class PlayState;
 
 class SceneObject : public GameObject
 {
 protected:
+	PlayState* myGame;
 	Point2D<int> myPosition;
 	int myWidth,
 		myHeight,
@@ -16,18 +20,14 @@ protected:
 		myCol;
 	SDL_Rect myRect;
 	Texture* myTexture;
-	std::list<SceneObject*>::iterator myIterator;
 
 public:
 	SceneObject();
-	SceneObject(PlayState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c);
+	SceneObject(GameState* state, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c);
 
 	virtual bool Hit(SDL_Rect rect, const char* c);
-	void setListIterator(std::list<SceneObject*>::iterator it);
 	void Render() const override;
 	void Update() override = 0;
 	void Save(ostream& out) const override;
-
-	std::list<SceneObject*>::iterator getIterator() { return myIterator; };
 };
 
