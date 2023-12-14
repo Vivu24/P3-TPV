@@ -2,8 +2,6 @@
 #include "GameState.h"
 #include <stack>
 
-class GameState;
-
 class GameStateMachine
 {
 private:

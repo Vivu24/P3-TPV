@@ -1,6 +1,6 @@
 #include "Button.h"
 
-Button::Button(Texture* tex) : myTexture(tex) {}
+Button::Button(GameState* state, Texture* tex) : myTexture(tex), GameObject(state), EventHandler() {}
 
 void Button::Connect(Callback newCb) {
 	myCallbacks.push_back(newCb);

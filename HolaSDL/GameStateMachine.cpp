@@ -1,6 +1,6 @@
 #include "GameStateMachine.h"
 
-void GameStateMachine::PushState(GameState* state) /*const*/ {
+void GameStateMachine::PushState(GameState* state) {
 	myState.push(state);	
     myState.top()->onEnter();
 }

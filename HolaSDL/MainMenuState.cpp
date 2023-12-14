@@ -1,5 +1,6 @@
 #include "MainMenuState.h"
 #include "SDLApplication.h"
+#include "texture.h"
 
 const std::string MainMenuState::s_menuID = "MENU";
 
@@ -16,16 +17,16 @@ void MainMenuState::Update() {}
 
 void MainMenuState::HandleEvent(const SDL_Event& e) {}
 
-bool MainMenuState::onEnter() { return; }
+bool MainMenuState::onEnter() { return true; }
 
-bool MainMenuState::onExit() { return; }
+bool MainMenuState::onExit() { return true; }
 
 void MainMenuState::CreateButtons() {
 	SDLApplication* myApp = getGame();
-	GameObject* obj = new Button(myApp->getTexture(TextureName::Cargar));
+	GameObject* obj = new Button(this, myApp->getTexture(TextureName::Cargar));
 	addObject(obj);
-	obj = new Button(myApp->getTexture(TextureName::Nueva));
+	obj = new Button(this, myApp->getTexture(TextureName::Nueva));
 	addObject(obj);
-	obj = new Button(myApp->getTexture(TextureName::Salir));
+	obj = new Button(this, myApp->getTexture(TextureName::Salir));
 	addObject(obj);
 }

@@ -18,7 +18,6 @@ protected:
 
 public:
 
-	GameObject();
 	GameObject(GameState* state);
 	virtual ~GameObject();
 	virtual void Render() const = 0;

@@ -24,7 +24,7 @@ bool SceneObject::Hit(SDL_Rect rect, const char* c) {
 	// Comprueba su colisión y si no tiene vidas lo elimina
 	if (SDL_HasIntersection(&rect, &auxRect)) {
 		--myLifes;
-		if (myLifes <= 0) myGame->HasDied(myAnchor);
+		if (myLifes <= 0) myGame->HasDied(myIterator);
 		hasHit = true;
 	}
 	return hasHit;
@@ -34,3 +34,8 @@ bool SceneObject::Hit(SDL_Rect rect, const char* c) {
 void SceneObject::Save(ostream& out) const {
 	out << myPosition.getX() << " " << myPosition.getY() << " ";
 };
+
+// Set del iterador del objeto
+void SceneObject::setListAnchor(GameList<SceneObject, false>::anchor it) {
+	myIterator = it;
+}

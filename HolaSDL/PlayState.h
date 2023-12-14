@@ -51,7 +51,7 @@ private:
 	Vector2D<int> direction = Vector2D(1, 0);
 
 	GameList<SceneObject, false> objectElems;
-	list<SceneObject*> objectToDelete;
+	//list<SceneObject*> objectToDelete;
 	Mothership* mama;
 	Cannon* player;
 
@@ -63,7 +63,7 @@ public:
 	void FireLaser(Point2D<int> position, const char* color);
 	int GetRandomRange(int min, int max);
 	bool Damage(SDL_Rect rect, const char* c);
-	void HasDied(GameList<GameObject, true>::anchor it);
+	void HasDied(GameList<SceneObject, false>::anchor it);
 	void addPoints(int p);
 
 	// Getters
@@ -82,8 +82,8 @@ private:
 	void SpawnUFO();
 	void Save(int k);
 
-	bool onEnter() override;
-	bool onExit() override;
+	bool onEnter() override { return true; }
+	bool onExit() override { return true; }
 	std::string getStateID() const override { return s_playID; }
 
 };

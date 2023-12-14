@@ -69,7 +69,7 @@ private:
 
 	GameStateMachine* machine;
 
-	Texture* auxTex[NUM_TEXTURES];
+	Texture* textures[NUM_TEXTURES];
 
 	GameList<EventHandler> gaes;
 

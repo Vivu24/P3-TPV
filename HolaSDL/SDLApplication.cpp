@@ -19,7 +19,7 @@ SDLApplication::SDLApplication() {
 	// Carga de texturas en el array
 	for (int i = 0; i < NUM_TEXTURES; ++i) {
 		try {
-			auxTex[i] =
+			textures[i] =
 				new Texture(renderer, (textureRoot + imgs[i].name).c_str(),
 					imgs[i].horizontalFrames, imgs[i].verticalFrames);
 		}
@@ -30,8 +30,10 @@ SDLApplication::SDLApplication() {
 }
 
 void SDLApplication::Run() {
-	Render();
-	Update();
+	while (true) {
+		Render();
+		Update();
+	}
 }
 
 void SDLApplication::Update() {
@@ -43,7 +45,7 @@ void SDLApplication::Render() const {
 }
 
 Texture* SDLApplication::getTexture(TextureName name) const {
-	return auxTex[name];
+	return textures[name];
 }
 
 void SDLApplication::HandleEvents() {

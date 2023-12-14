@@ -106,9 +106,9 @@ void PlayState::Update() {
 		delete i;
 	}*/
 
-	if (objectToDelete.size() > 0) {
+	/*if (objectToDelete.size() > 0) {
 		objectToDelete.clear();
-	}
+	}*/
 
 	// Actualización del update de la mothership
 	mama->Update();
@@ -243,7 +243,7 @@ void PlayState::LoadMaps(string map) {
 				Texture* auxTex = getGame()->getTexture(TextureName::Spaceship);
 				Cannon* c = new Cannon(this, auxTex, Point2D<int>(elementX, elementY),
 					auxTex->getFrameWidth(), auxTex->getFrameHeight(), lifes, 0, 0, cooldown);
-				objectElems.push_back(c);
+				myList.push_back(c);
 				player = c;
 			}
 
@@ -255,7 +255,7 @@ void PlayState::LoadMaps(string map) {
 				Texture* auxTex = getGame()->getTexture(TextureName::Aliens);
 				Alien* a = new Alien(this, auxTex, Point2D<int>(elementX, elementY),
 					auxTex->getFrameWidth(), auxTex->getFrameHeight(), 1, subIndiceAlien, 0, mama);
-				objectElems.push_back(a);
+				myList.push_back(a);
 				mama->addAlien();
 			}
 
@@ -268,7 +268,7 @@ void PlayState::LoadMaps(string map) {
 				Texture* auxTex = getGame()->getTexture(TextureName::Aliens);
 				ShooterAlien* a = new ShooterAlien(this, auxTex, Point2D<int>(elementX, elementY),
 					auxTex->getFrameWidth(), auxTex->getFrameHeight(), 1, subIndiceAlien, 0, mama, cooldown);
-				objectElems.push_back(a);
+				myList.push_back(a);
 				mama->addAlien();
 			}
 
@@ -280,7 +280,7 @@ void PlayState::LoadMaps(string map) {
 				Texture* auxTex = getGame()->getTexture(TextureName::Bunkers);
 				Bunker* b = new Bunker(this, auxTex, Point2D<int>(elementX, elementY),
 					auxTex->getFrameWidth(), auxTex->getFrameHeight(), lifes, 0, 0);
-				objectElems.push_back(b);
+				myList.push_back(b);
 			}
 
 			// Si leemos un UFO --> Asignamos el UFO
@@ -292,7 +292,7 @@ void PlayState::LoadMaps(string map) {
 				Texture* auxTex = getGame()->getTexture(TextureName::UFOs);
 				UFO* b = new UFO(this, auxTex, Point2D<int>(elementX, elementY),
 					auxTex->getFrameWidth(), auxTex->getFrameHeight(), 1, 0, 0, state, cooldown);
-				objectElems.push_back(b);
+				myList.push_back(b);
 			}
 
 			// Si leemos la Mothership --> Asignamos la Mothership
@@ -326,10 +326,8 @@ void PlayState::LoadMaps(string map) {
 }
 
 // Cuando un objeto ha de ser eliminado se añade a la lista de objetos a eliminar
-void PlayState::HasDied(GameList<GameObject, true>::anchor it) {
-	if (it != objectElems.end()) {
-		objectToDelete.push_back(it);
-	}
+void PlayState::HasDied(GameList<SceneObject, false>::anchor it) {
+	objectElems.erase(it);
 }
 
 // Devuelve el número de aliens

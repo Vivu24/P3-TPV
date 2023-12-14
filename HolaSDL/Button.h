@@ -7,20 +7,19 @@
 
 using Callback = std::function<void(void)>;
 
-class Button :
-    public GameObject, public EventHandler
+class Button : public GameObject, public EventHandler
 {
 private:
-    Texture* myTexture;
+    Texture* myTexture = nullptr;
     std::list<Callback> myCallbacks;
 
 public:
-    Button(Texture* tex);
+    Button(GameState* state, Texture* tex);
 
     void Connect(Callback newCb);
     void Render() const override;
-    void Update() override;
-    void Save(ostream&) const override;
-    void HandleEvent(const SDL_Event&) override;
+    void Update() override {}
+    void Save(ostream& out) const override {}
+    void HandleEvent(const SDL_Event& event) override {}
 };
 

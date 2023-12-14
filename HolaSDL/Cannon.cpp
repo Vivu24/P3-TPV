@@ -70,7 +70,7 @@ bool Cannon::Hit(SDL_Rect rect, const char* c) {
 	if (SDL_HasIntersection(&rect, &auxRect) && c == "r") {
 		--myLifes;
 		if (myLifes <= 0) {
-			myGame->HasDied(myAnchor);
+			myGame->HasDied(myIterator);
 			++myAnchor;
 		}
 		hasHit = true;

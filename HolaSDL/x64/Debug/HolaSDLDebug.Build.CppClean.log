@@ -1,31 +1,40 @@
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\vc143.pdb
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\vc143.idb
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\ufo.obj
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\texture.obj
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\shooteralien.obj
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\sdlerror.obj
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\sceneobject.obj
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\mothership.obj
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\main.obj
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\laser.obj
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\invaderserror.obj
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\gameobject.obj
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\game.obj
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\filenotfounderror.obj
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\fileformaterror.obj
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\cannon.obj
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\bunker.obj
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\alien.obj
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\bin\holasdldebug.exe
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\holasdldebug.ilk
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\bin\holasdldebug.pdb
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\game.obj.enc
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\mothership.obj.enc
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\ufo.obj.enc
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\holasdl.tlog\cl.command.1.tlog
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\holasdl.tlog\cl.items.tlog
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\holasdl.tlog\cl.read.1.tlog
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\holasdl.tlog\cl.write.1.tlog
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\holasdl.tlog\link.command.1.tlog
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\holasdl.tlog\link.read.1.tlog
-c:\users\jaime vicente arroyo\desktop\c0s1t4s\universidad\2º\tpv2\entrega\holasdl\x64\debug\holasdl.tlog\link.write.1.tlog
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\vc143.pdb
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\vc143.idb
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\sceneobject.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\playstate.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\mothership.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\main.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\laser.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\invaderserror.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\gamestate.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\gameobject.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\sdlapplication.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\pausestate.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\mainmenustate.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\gamestatemachine.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\filenotfounderror.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\fileformaterror.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\eventhandler.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\endstate.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\cannon.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\button.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\bunker.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\alien.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\ufo.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\texture.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\shooteralien.obj
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\sdlerror.obj
+c:\users\javi\desktop\p3-tpv\bin\holasdldebug.pdb
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\holasdl.tlog\cl.command.1.tlog
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\holasdl.tlog\cl.read.1.tlog
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\holasdl.tlog\cl.write.1.tlog
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\holasdl.tlog\link-cvtres.read.1.tlog
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\holasdl.tlog\link-cvtres.write.1.tlog
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\holasdl.tlog\link-rc.read.1.tlog
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\holasdl.tlog\link-rc.write.1.tlog
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\holasdl.tlog\link.command.1.tlog
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\holasdl.tlog\link.read.1.tlog
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\holasdl.tlog\link.read.2.tlog
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\holasdl.tlog\link.read.3.tlog
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\holasdl.tlog\link.read.4.tlog
+c:\users\javi\desktop\p3-tpv\holasdl\x64\debug\holasdl.tlog\link.write.1.tlog

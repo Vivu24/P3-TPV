@@ -11,6 +11,7 @@ class PlayState;
 class SceneObject : public GameObject
 {
 protected:
+	GameList<SceneObject, false>::anchor myIterator;
 	PlayState* myGame;
 	Point2D<int> myPosition;
 	int myWidth,
@@ -29,5 +30,7 @@ public:
 	void Render() const override;
 	void Update() override = 0;
 	void Save(ostream& out) const override;
+
+	void setListAnchor(GameList<SceneObject, false>::anchor it);
 };
 

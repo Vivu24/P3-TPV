@@ -27,7 +27,8 @@ bool Alien::Hit(SDL_Rect rect, const char* c) {
 		--myLifes;
 		if (myLifes <= 0) {
 			myGame->addPoints(points);
-			myGame->HasDied(myAnchor);
+			myState->HasDied(myAnchor);
+			myGame->HasDied(myIterator);
 			myMama->alienDied();
 		}
 		hasHit = true;
