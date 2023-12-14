@@ -27,12 +27,14 @@ SDLApplication::SDLApplication() {
 			throw FileNotFoundError("Error al cargar la textura: "s + imgs[i].name);
 		}
 	}
+
+	//for(;;) textures[0]->render();
 }
 
 void SDLApplication::Run() {
 	while (true) {
-		Render();
 		Update();
+		Render();
 	}
 }
 
@@ -41,7 +43,9 @@ void SDLApplication::Update() {
 }
 
 void SDLApplication::Render() const {
+	SDL_RenderClear(renderer);
 	machine->Render();
+	SDL_RenderPresent(renderer);
 }
 
 Texture* SDLApplication::getTexture(TextureName name) const {

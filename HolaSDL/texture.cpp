@@ -54,6 +54,7 @@ Texture::render() const
 void
 Texture::render(const SDL_Rect& rect) const
 {
+
 	SDL_RenderCopy(renderer, texture, nullptr, &rect);
 }
 
