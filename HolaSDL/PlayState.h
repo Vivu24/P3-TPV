@@ -76,7 +76,7 @@ private:
 	void Render() const override;
 	void Update() override;
 	void RenderPoints();
-	void HandleEvents();
+	void HandleEvent(const SDL_Event& event) override;
 	void Menu();
 	void LoadMaps(string map);
 	void SpawnUFO();

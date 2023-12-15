@@ -13,9 +13,6 @@ SDLApplication::SDLApplication() {
 		SDL_RenderClear(renderer);
 	}
 
-	machine = new GameStateMachine();
-	machine->PushState(new MainMenuState(this));
-
 	// Carga de texturas en el array
 	for (int i = 0; i < NUM_TEXTURES; ++i) {
 		try {
@@ -28,6 +25,9 @@ SDLApplication::SDLApplication() {
 		}
 	}
 
+	machine = new GameStateMachine();
+	machine->PushState(new MainMenuState(this));
+
 	//for(;;) textures[0]->render();
 }
 
@@ -35,6 +35,7 @@ void SDLApplication::Run() {
 	while (true) {
 		Update();
 		Render();
+		HandleEvents();
 	}
 }
 
@@ -55,8 +56,18 @@ Texture* SDLApplication::getTexture(TextureName name) const {
 void SDLApplication::HandleEvents() {
 	SDL_Event event;
 	while (SDL_PollEvent(&event)) {
-		for (EventHandler &e : gaes) {
-			e.HandleEvent(event);
-		}
+		machine->currentState()->HandleEvent(event);
 	}
+}
+
+void SDLApplication::PushState(GameState* state) {
+	machine->PushState(state);
+}
+
+void SDLApplication::ReplaceState(GameState* state) {
+	machine->ReplaceState(state);
+}
+
+void SDLApplication::PopState() {
+	machine->PopState();
 }

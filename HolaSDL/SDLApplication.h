@@ -82,6 +82,10 @@ public:
 
 	void Run();
 
+	void PushState(GameState* state) /*const*/;
+	void ReplaceState(GameState* state);
+	void PopState();
+
 	SDL_Renderer* GetRenderer() { return renderer; }
 	Texture* getTexture(TextureName name) const;
 	void HandleEvents();

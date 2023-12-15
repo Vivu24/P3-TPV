@@ -21,7 +21,7 @@ private:
 public:
 	Cannon(GameState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, int cd);
 	void Update() override;
-	void HandleEvent(SDL_Event& event);
+	void HandleEvent(const SDL_Event& event);
 	void Move();
 	bool Hit(SDL_Rect rect, const char* c) override;
 	void Save(ostream& out) const override;

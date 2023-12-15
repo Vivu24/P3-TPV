@@ -17,7 +17,7 @@ void Cannon::Fire() {
 }
 
 // Eventos
-void Cannon::HandleEvent(SDL_Event &event) {
+void Cannon::HandleEvent(const SDL_Event &event) {
 	// Disparo
 	if (event.key.keysym.sym == SDLK_SPACE) {
 		if (currentCooldown <= 0)  {

@@ -18,7 +18,7 @@ bool PauseState::onEnter() { return true; }
 bool PauseState::onExit() { return true; }
 
 void PauseState::CreateButtons() {
-	SDLApplication* myApp = getGame();
+	/*SDLApplication* myApp = getGame();
 	GameObject* obj = new Button(this, myApp->getTexture(TextureName::Continuar));
 	addObject(obj);
 	obj = new Button(this, myApp->getTexture(TextureName::Cargar));
@@ -26,5 +26,5 @@ void PauseState::CreateButtons() {
 	obj = new Button(this, myApp->getTexture(TextureName::Guardar));
 	addObject(obj);
 	obj = new Button(this, myApp->getTexture(TextureName::Salir));
-	addObject(obj);
+	addObject(obj);*/
 }

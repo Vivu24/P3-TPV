@@ -1,12 +1,2 @@
-﻿  SDLApplication.cpp
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-  texture.cpp
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.cpp(15,21): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.cpp(16,23): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.cpp(39,21): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.cpp(40,23): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
-  Generando código...
+﻿  GameStateMachine.cpp
   HolaSDL.vcxproj -> C:\Users\Javi\Desktop\P3-TPV\bin\HolaSDLDebug.exe

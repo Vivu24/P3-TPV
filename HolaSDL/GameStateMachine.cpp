@@ -10,8 +10,8 @@ void GameStateMachine::ReplaceState(GameState* state) {
         if (myState.top()->getStateID() == state->getStateID()) return;
 
         if (myState.top()->onExit()) {
-            myState.pop();
             delete myState.top();
+            myState.pop();
         }
     }
 

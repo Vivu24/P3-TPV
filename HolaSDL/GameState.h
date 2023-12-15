@@ -34,7 +34,7 @@ public:
 	virtual std::string getStateID() const = 0;
 
 
-	void addEventListener();
+	void addEventListener(EventHandler* event);
 	void addObject(GameObject* obj);
 
 private:

@@ -79,6 +79,7 @@
     <ClCompile Include="GameStateMachine.cpp" />
     <ClCompile Include="MainMenuState.cpp" />
     <ClCompile Include="PauseState.cpp" />
+    <ClCompile Include="Reward.cpp" />
     <ClCompile Include="SDLApplication.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameState.cpp" />
@@ -107,6 +108,7 @@
     <ClInclude Include="GameStateMachine.h" />
     <ClInclude Include="MainMenuState.h" />
     <ClInclude Include="PauseState.h" />
+    <ClInclude Include="Reward.h" />
     <ClInclude Include="SDLApplication.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameState.h" />

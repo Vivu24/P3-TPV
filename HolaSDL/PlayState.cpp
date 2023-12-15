@@ -8,7 +8,8 @@ const std::string PlayState::s_playID = "PLAY";
 // Constructora
 PlayState::PlayState(SDLApplication* app) : GameState(app) {
 	mama = new Mothership(this);
-	Menu();
+	LoadMaps("original.txt");
+	//Menu();
 }
 
 // Destructora
@@ -59,7 +60,7 @@ void PlayState::Run() {
 		//SDL_RenderClear(renderer);
 		Update();
 		Render();
-		HandleEvents();
+		//HandleEvent();
 		frameTime = SDL_GetTicks() - startTime;
 
 		if (frameTime <= FRAME_RATE) SDL_Delay(FRAME_RATE - frameTime);
@@ -116,10 +117,9 @@ void PlayState::Update() {
 }
 
 // Manejo de eventos
-void PlayState::HandleEvents()
+void PlayState::HandleEvent(const SDL_Event& event)
 {
-	SDL_Event event;
-	if (SDL_PollEvent(&event) && !exit)
+	if (!exit)
 	{
 		if (pause)
 		{

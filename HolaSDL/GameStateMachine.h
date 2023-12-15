@@ -15,5 +15,7 @@ public:
 	void PushState(GameState* state) /*const*/;
 	void ReplaceState(GameState* state);
 	void PopState();
+
+	GameState* currentState() { if (!myState.empty()) return myState.top(); }
 };
 

@@ -10,7 +10,7 @@ private:
     static const std::string s_menuID;
 
 public:
-    MainMenuState(SDLApplication* app) : GameState(app) {}
+    MainMenuState(SDLApplication* app);
     void Render() const override;
     void Update() override;
     void HandleEvent(const SDL_Event& e) override;

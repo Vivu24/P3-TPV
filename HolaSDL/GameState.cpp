@@ -11,7 +11,9 @@ void GameState::Save(ostream&) const {};
 
 void GameState::HasDied(GameList<GameObject, true>::anchor) {};
 
-void GameState::addEventListener() {};
+void GameState::addEventListener(EventHandler* event) {
+	myEvents.push_back(event);
+};
 
 void GameState::addObject(GameObject* obj) {
 	myList.push_back(obj);
