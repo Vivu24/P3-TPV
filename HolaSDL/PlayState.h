@@ -10,7 +10,6 @@
 #include "Vector2D.h"
 #include "Cannon.h"
 #include <string>
-#include <random>
 #include <fstream>
 #include <iostream>
 #include <ostream>
@@ -21,12 +20,13 @@
 #include "FileFormatError.h"
 #include "FileNotFoundError.h"
 #include "gameList.h"
+#include "EndState.h"
+#include <random>
 
 using namespace std;
 
 // Constantes
-constexpr int PLAYER_VELOCITY = 4,
-			  FRAME_RATE = 30;
+constexpr int PLAYER_VELOCITY = 4;
 
 class Mothership;
 class SDLApplication;
@@ -37,7 +37,7 @@ class PlayState :
 private:
 	static const std::string s_playID;
 
-	bool exit = false,
+	bool 
 		cannotMove = false,
 		pause = false,
 		saving = false;
@@ -46,7 +46,7 @@ private:
 
 	int ufoSpawnTime;
 
-	mt19937_64 rdo = mt19937_64(time(nullptr));
+	mt19937_64 rdo;
 
 	Vector2D<int> direction = Vector2D(1, 0);
 
@@ -70,8 +70,6 @@ public:
 	Vector2D<int> GetDirection() { return direction; }
 	int GetAlienNums();
 
-	// Setters
-	void SetExit() { exit = true; }
 private:
 	void Render() const override;
 	void Update() override;

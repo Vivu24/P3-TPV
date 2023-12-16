@@ -32,10 +32,17 @@ SDLApplication::SDLApplication() {
 }
 
 void SDLApplication::Run() {
-	while (true) {
+	uint32_t startTime,
+		frameTime;
+	while (machine->currentState() != nullptr) {
+		startTime = SDL_GetTicks();
 		Update();
 		Render();
 		HandleEvents();
+
+		/*frameTime = SDL_GetTicks() - startTime;
+
+		if (frameTime <= FRAME_RATE) SDL_Delay(FRAME_RATE - frameTime);*/
 	}
 }
 

@@ -5,8 +5,8 @@
 
 
 // Constructora
-Cannon::Cannon(GameState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, int cd) :
-	SceneObject(game, texture, pos, w, h, l, f, c), cooldown(cd){
+Cannon::Cannon(PlayState* game, GameState* state, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, int cd) :
+	SceneObject(game, state, texture, pos, w, h, l, f, c), cooldown(cd){
 	currentCooldown = cooldown;
 }
 

@@ -4,8 +4,8 @@
 #include "PlayState.h"
 
 // Constructora
-Laser::Laser(GameState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, const char* type)
-	: SceneObject(game, texture, pos, w, h, l, f, c), myType(type) {};
+Laser::Laser(PlayState* game, GameState* state, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, const char* type)
+	: SceneObject(game, state, texture, pos, w, h, l, f, c), myType(type) {};
 
 // Render
 void Laser::Render() const {

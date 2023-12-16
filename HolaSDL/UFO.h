@@ -22,7 +22,7 @@ private:
 	Vector2D<int> myDirection = Vector2D(5, 0);
 
 public:
-	UFO(GameState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, int s, int cd);
+	UFO(PlayState* game, GameState* state, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, int s, int cd);
 
 	int GetState() { return currentState; }
 

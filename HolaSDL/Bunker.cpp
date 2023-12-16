@@ -5,8 +5,8 @@
 using namespace std;
 
 // Constructora
-Bunker::Bunker(GameState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c) :
-	SceneObject(game, texture, pos, w, h, l, f, c) {};
+Bunker::Bunker(PlayState* game, GameState* state, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c) :
+	SceneObject(game, state, texture, pos, w, h, l, f, c) {};
 
 // Render
 void Bunker::Render() const{

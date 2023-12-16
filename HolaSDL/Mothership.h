@@ -4,6 +4,7 @@
 #include <ostream>
 #include <iostream>
 #include "PlayState.h"
+#include "EndState.h"
 
 using namespace std;
 

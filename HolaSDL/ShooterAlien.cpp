@@ -3,8 +3,8 @@
 #include "checkML.h"
 
 // Constructora
-ShooterAlien::ShooterAlien(GameState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, Mothership* mama, int cd) :
-	Alien(game, texture, pos, w, h, l, f, c, mama), cooldown(cd) {
+ShooterAlien::ShooterAlien(PlayState* game, GameState* state, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, Mothership* mama, int cd) :
+	Alien(game, state, texture, pos, w, h, l, f, c, mama), cooldown(cd) {
 	currentCooldown = cooldown;
 }
 

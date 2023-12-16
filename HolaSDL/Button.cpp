@@ -12,13 +12,15 @@ void Button::Render() const {
 }
 
 void Button::HandleEvent(const SDL_Event& event) {
-	int mouseX, mouseY;
-	SDL_GetMouseState(&mouseX, &mouseY);
+	if (event.type == SDL_MOUSEBUTTONDOWN) {
+		int mouseX, mouseY;
+		SDL_GetMouseState(&mouseX, &mouseY);
 
-	if (mouseX >= myPosition.getX() && mouseX < myPosition.getX() + myTexture->getFrameWidth() &&
-		mouseY >= myPosition.getY() && mouseY < myPosition.getY() + myTexture->getFrameHeight()) {
-		for (Callback c : myCallbacks) {
-			c();
+		if (mouseX >= myPosition.getX() && mouseX < myPosition.getX() + myTexture->getFrameWidth() &&
+			mouseY >= myPosition.getY() && mouseY < myPosition.getY() + myTexture->getFrameHeight()) {
+			for (Callback c : myCallbacks) {
+				c();
+			}
 		}
 	}
 }

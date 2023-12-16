@@ -19,7 +19,7 @@ private:
 	bool input;
 
 public:
-	Cannon(GameState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, int cd);
+	Cannon(PlayState* game, GameState* state, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, int cd);
 	void Update() override;
 	void HandleEvent(const SDL_Event& event);
 	void Move();

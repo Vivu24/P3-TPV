@@ -1,6 +1,7 @@
 #include "Mothership.h"
 #include "PlayState.h"
 #include "checkML.h"
+#include "SDLApplication.h"
 
 // Constructora
 Mothership::Mothership(GameState* game) : GameObject(game) {};
@@ -12,7 +13,7 @@ void Mothership::Update() {
 		ChangeDirection();
 	}
 
-	if (alienNum == 0) myGame->SetExit();
+	if (alienNum == 0) myState->SetPop(true);
 }
 
 void Mothership::ChangeDirection() {
@@ -44,7 +45,7 @@ void Mothership::alienLanded() {
 
 // Cuando llegan abajo hace la llamada necesaria para finalizar el juego
 void Mothership::haveLanded() {
-	myGame->SetExit();
+	myState->SetPop(true);
 }
 
 // Elimina un alien de la cuenta total

@@ -14,6 +14,7 @@ class GameState
 protected:
 	GameList<GameObject, true> myList;
 	list<EventHandler*> myEvents;
+	bool pop = false;
 
 public: 
 	GameState(SDLApplication* app) : myApp(app) {}
@@ -37,6 +38,7 @@ public:
 	void addEventListener(EventHandler* event);
 	void addObject(GameObject* obj);
 
+	void SetPop(bool p) { pop = p; }
 private:
 	SDLApplication* myApp;
 };

@@ -9,7 +9,7 @@
 class Bunker : public SceneObject
 {
 public:
-	Bunker(GameState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c);
+	Bunker(PlayState* game, GameState* state, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c);
 	void Render() const override;
 	void Update() override;
 	void Save(ostream& out) const override;

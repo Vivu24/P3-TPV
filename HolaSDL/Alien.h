@@ -18,7 +18,7 @@ protected:
 		points;
 
 public:
-	Alien(GameState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, Mothership* mama);
+	Alien(PlayState* game, GameState* state, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, Mothership* mama);
 	bool Hit(SDL_Rect rect, const char* c) override;
 	void Save(ostream& out) const override;
 

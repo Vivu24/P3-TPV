@@ -6,7 +6,7 @@
 const std::string PlayState::s_playID = "PLAY";
 
 // Constructora
-PlayState::PlayState(SDLApplication* app) : GameState(app) {
+PlayState::PlayState(SDLApplication* app) : GameState(app), rdo(mt19937_64(time(nullptr))) {
 	mama = new Mothership(this);
 	LoadMaps("original.txt");
 	//Menu();
@@ -52,18 +52,13 @@ void PlayState::Menu() {
 
 // Ejecucion del juego
 void PlayState::Run() {
-	uint32_t startTime,
-		frameTime;
 	// Mientras el jugador este vivo o no hayan muerto todos los aliens
 	while (!exit) {
-		startTime = SDL_GetTicks();
+
 		//SDL_RenderClear(renderer);
 		Update();
 		Render();
 		//HandleEvent();
-		frameTime = SDL_GetTicks() - startTime;
-
-		if (frameTime <= FRAME_RATE) SDL_Delay(FRAME_RATE - frameTime);
 	}
 
 	cout << "A POR EL SPACE INVADERS 3.0";
@@ -74,7 +69,7 @@ void PlayState::Render() const {
 	getGame()->getTexture(TextureName::Stars)->render();
 
 	// Renderizado de todos los objetos de escena
-	for (SceneObject& obj : objectElems) {
+	for (GameObject& obj : myList) {
 		obj.Render();
 	}
 	// Renderizado de la puntuación
@@ -98,7 +93,7 @@ void PlayState::RenderPoints() {
 // Update general
 void PlayState::Update() {
 	// Update de los scenesObjects
-	for (SceneObject& obj : objectElems) {
+	for (GameObject& obj : myList) {
 		obj.Update();
 	}
 	// Lista auxiliar para eliminar los objetos
@@ -113,13 +108,13 @@ void PlayState::Update() {
 
 	// Actualización del update de la mothership
 	mama->Update();
-
+	if (pop) getGame()->ReplaceState(new EndState(getGame()));
 }
 
 // Manejo de eventos
 void PlayState::HandleEvent(const SDL_Event& event)
 {
-	if (!exit)
+	if (!getGame()->GetExit())
 	{
 		if (pause)
 		{
@@ -171,7 +166,7 @@ void PlayState::HandleEvent(const SDL_Event& event)
 			}
 		}
 		if (event.type == SDL_QUIT) {
-			exit = true;
+			getGame()->SetExit();
 		}
 	}
 }
@@ -179,21 +174,22 @@ void PlayState::HandleEvent(const SDL_Event& event)
 // Disparar
 void PlayState::FireLaser(Point2D<int> position, const char* color) {
 	// Creamos el laser y se añade al vector
-	Laser* l = new Laser(this, nullptr, position, 10, 20, 1, 0, 0, color);
-	objectElems.push_back(l);
+	Laser* l = new Laser(this, this, nullptr, position, 10, 20, 1, 0, 0, color);
+	addObject(l);
 	//l->setListIterator(prev(objectElems.end()));
 }
 
 void PlayState::SpawnUFO() {
 	Texture* auxTex = getGame()->getTexture(TextureName::UFOs);
-	UFO* u = new UFO(this, auxTex, Vector2D<int>(800, 10), auxTex->getFrameWidth(), auxTex->getFrameHeight(), 1, 0, 0, 0, 200);
-	objectElems.push_back(u);
+	UFO* u = new UFO(this, this, auxTex, Vector2D<int>(800, 10), auxTex->getFrameWidth(), auxTex->getFrameHeight(), 1, 0, 0, 0, 200);
+	addObject(u);
 	//u->setListIterator(prev(objectElems.end()));
 }
 
 // Generador de aleatorios
 int PlayState::GetRandomRange(int min, int max) {
-	return uniform_int_distribution<int>(min, max)(rdo);
+	return 1;
+	//return uniform_int_distribution<int>(min, max)(rdo);
 }
 
 // Colisiones
@@ -241,7 +237,7 @@ void PlayState::LoadMaps(string map) {
 				entrada >> lifes;
 				entrada >> cooldown;
 				Texture* auxTex = getGame()->getTexture(TextureName::Spaceship);
-				Cannon* c = new Cannon(this, auxTex, Point2D<int>(elementX, elementY),
+				Cannon* c = new Cannon(this, this, auxTex, Point2D<int>(elementX, elementY),
 					auxTex->getFrameWidth(), auxTex->getFrameHeight(), lifes, 0, 0, cooldown);
 				myList.push_back(c);
 				player = c;
@@ -253,7 +249,7 @@ void PlayState::LoadMaps(string map) {
 				entrada >> elementY;
 				entrada >> subIndiceAlien;
 				Texture* auxTex = getGame()->getTexture(TextureName::Aliens);
-				Alien* a = new Alien(this, auxTex, Point2D<int>(elementX, elementY),
+				Alien* a = new Alien(this, this, auxTex, Point2D<int>(elementX, elementY),
 					auxTex->getFrameWidth(), auxTex->getFrameHeight(), 1, subIndiceAlien, 0, mama);
 				myList.push_back(a);
 				mama->addAlien();
@@ -266,7 +262,7 @@ void PlayState::LoadMaps(string map) {
 				entrada >> subIndiceAlien;
 				entrada >> cooldown;
 				Texture* auxTex = getGame()->getTexture(TextureName::Aliens);
-				ShooterAlien* a = new ShooterAlien(this, auxTex, Point2D<int>(elementX, elementY),
+				ShooterAlien* a = new ShooterAlien(this, this, auxTex, Point2D<int>(elementX, elementY),
 					auxTex->getFrameWidth(), auxTex->getFrameHeight(), 1, subIndiceAlien, 0, mama, cooldown);
 				myList.push_back(a);
 				mama->addAlien();
@@ -278,7 +274,7 @@ void PlayState::LoadMaps(string map) {
 				entrada >> elementY;
 				entrada >> lifes;
 				Texture* auxTex = getGame()->getTexture(TextureName::Bunkers);
-				Bunker* b = new Bunker(this, auxTex, Point2D<int>(elementX, elementY),
+				Bunker* b = new Bunker(this, this, auxTex, Point2D<int>(elementX, elementY),
 					auxTex->getFrameWidth(), auxTex->getFrameHeight(), lifes, 0, 0);
 				myList.push_back(b);
 			}
@@ -290,7 +286,7 @@ void PlayState::LoadMaps(string map) {
 				entrada >> state;
 				entrada >> cooldown;
 				Texture* auxTex = getGame()->getTexture(TextureName::UFOs);
-				UFO* b = new UFO(this, auxTex, Point2D<int>(elementX, elementY),
+				UFO* b = new UFO(this, this, auxTex, Point2D<int>(elementX, elementY),
 					auxTex->getFrameWidth(), auxTex->getFrameHeight(), 1, 0, 0, state, cooldown);
 				myList.push_back(b);
 			}

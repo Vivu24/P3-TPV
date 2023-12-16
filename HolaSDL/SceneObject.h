@@ -24,7 +24,7 @@ protected:
 
 public:
 	SceneObject();
-	SceneObject(GameState* state, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c);
+	SceneObject(PlayState* game, GameState* state, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c);
 
 	virtual bool Hit(SDL_Rect rect, const char* c);
 	void Render() const override;

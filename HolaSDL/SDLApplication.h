@@ -5,6 +5,7 @@
 #include "GameStateMachine.h"
 #include "gameList.h"
 #include "MainMenuState.h"
+#include "EndState.h"
 
 
 using namespace std;
@@ -13,7 +14,8 @@ const string textureRoot = "..\\images";
 // Constantes
 constexpr int NUM_TEXTURES = 16,
 			  WIN_WIDTH = 800,
-			  WIN_HEIGHT = 600;
+			  WIN_HEIGHT = 600,
+			  FRAME_RATE = 30;
 
 enum TextureName {
 	Stars,
@@ -64,6 +66,8 @@ private:
 		img {"\\volverAlMenu.png", 1, 1}
 	};
 
+	bool exit = false;
+
 	SDL_Window* window = nullptr;
 	SDL_Renderer* renderer = nullptr;
 
@@ -89,5 +93,10 @@ public:
 	SDL_Renderer* GetRenderer() { return renderer; }
 	Texture* getTexture(TextureName name) const;
 	void HandleEvents();
+
+	// Setters
+	void SetExit() { exit = true; }
+
+	bool GetExit() { return exit; }
 };
 

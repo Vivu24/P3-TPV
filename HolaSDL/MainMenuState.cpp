@@ -18,13 +18,13 @@ void MainMenuState::Render() const {
 	}
 }
 
-void MainMenuState::Update() {}
+void MainMenuState::Update() {
+	if(pop) getGame()->ReplaceState(new PlayState(getGame()));
+} 
 
 void MainMenuState::HandleEvent(const SDL_Event& e) {
-	if (e.type == SDL_MOUSEBUTTONDOWN) {
-		for (EventHandler* b : myEvents) {
-			b->HandleEvent(e);
-		}
+	for (EventHandler* b : myEvents) {
+		b->HandleEvent(e);
 	}
 }
 
@@ -40,7 +40,7 @@ void MainMenuState::CreateButtons() {
 	addEventListener(obj);
 	obj = new Button(this, myApp->getTexture(TextureName::Nueva), Point2D<int>(WIN_WIDTH / 2 - myApp->getTexture(TextureName::Nueva)->getFrameWidth() / 2, 150));
 	obj->Connect([this]() {
-		getGame()->ReplaceState(new PlayState(getGame()));
+		pop = true;
 	});
 	addObject(obj);
 	addEventListener(obj);

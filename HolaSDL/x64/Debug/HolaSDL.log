@@ -1,2 +1,4 @@
-﻿  GameStateMachine.cpp
+﻿  EndState.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
   HolaSDL.vcxproj -> C:\Users\Javi\Desktop\P3-TPV\bin\HolaSDLDebug.exe

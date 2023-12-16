@@ -4,8 +4,8 @@
 #include "PlayState.h"
 
 // Constructora
-SceneObject::SceneObject(GameState* state, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c)
-	: GameObject(state), myTexture(texture), myPosition(pos), myWidth(w), myHeight(h), myLifes(l), myFil(f), myCol(c) {}
+SceneObject::SceneObject(PlayState* game, GameState* state, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c)
+	: myGame(game), GameObject(state), myTexture(texture), myPosition(pos), myWidth(w), myHeight(h), myLifes(l), myFil(f), myCol(c) {}
 
 // Render
 void SceneObject::Render() const {

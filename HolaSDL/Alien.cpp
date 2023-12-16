@@ -4,8 +4,8 @@
 #include "Mothership.h"
 
 // Constructora
-Alien::Alien(GameState* game, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, Mothership* mama) :
-	SceneObject(game, texture, pos, w, h, l, f, c), myMama(mama) {
+Alien::Alien(PlayState* game, GameState* state, Texture* texture, Vector2D<int> pos, int w, int h, int l, int f, int c, Mothership* mama) :
+	SceneObject(game, state, texture, pos, w, h, l, f, c), myMama(mama) {
 	if (f == 0) points = 30;
 	else if (f == 1) points = 20;
 	else if (f == 2) points = 10;
