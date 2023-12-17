@@ -40,9 +40,9 @@ void SDLApplication::Run() {
 		Render();
 		HandleEvents();
 
-		/*frameTime = SDL_GetTicks() - startTime;
+		frameTime = SDL_GetTicks() - startTime;
 
-		if (frameTime <= FRAME_RATE) SDL_Delay(FRAME_RATE - frameTime);*/
+		if (frameTime <= FRAME_RATE) SDL_Delay(FRAME_RATE - frameTime);
 	}
 }
 

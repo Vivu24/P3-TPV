@@ -9,7 +9,9 @@ void GameState::HandleEvent(const SDL_Event&) {};
 
 void GameState::Save(ostream&) const {};
 
-void GameState::HasDied(GameList<GameObject, true>::anchor) {};
+void GameState::HasDied(GameList<GameObject, true>::anchor it) {
+	myList.erase(it);
+};
 
 void GameState::addEventListener(EventHandler* event) {
 	myEvents.push_back(event);

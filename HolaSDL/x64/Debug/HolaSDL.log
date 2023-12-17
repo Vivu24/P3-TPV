@@ -1,4 +1,102 @@
-﻿  EndState.cpp
+﻿  Alien.cpp
 C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
 C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
-  HolaSDL.vcxproj -> C:\Users\Javi\Desktop\P3-TPV\bin\HolaSDLDebug.exe
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  Bunker.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+  Button.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+  Cannon.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  EndState.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+  EventHandler.cpp
+  FileFormatError.cpp
+  FileNotFoundError.cpp
+  GameStateMachine.cpp
+  MainMenuState.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  PauseState.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+  Reward.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(5,17): error C2143: error de sintaxis: falta ')' delante de '*'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(5,17): error C2143: error de sintaxis: falta ';' delante de '*'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(5,8): error C2512: 'Reward': no hay disponible un constructor predeterminado adecuado
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.h(8,7): message : vea la declaración de 'Reward'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(5,23): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(5,34): error C2143: error de sintaxis: falta ';' delante de '*'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(5,34): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(5,41): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(5,50): error C2143: error de sintaxis: falta ';' delante de '*'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(5,50): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(5,59): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(5,78): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(5,61): error C7538: "Vector2D<int>" no es una plantilla de variables
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(5,75): error C2146: error de sintaxis: falta ';' delante del identificador 'pos'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(5,113): error C2059: error de sintaxis: ')'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(6,55): error C2143: error de sintaxis: falta ';' delante de '{'
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(6,55): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(9,6): error C2653: 'Alien': no es un nombre de clase o espacio de nombres
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(10,2): error C2065: 'myPosition': identificador no declarado
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(11,2): error C2065: 'myPosition': identificador no declarado
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(11,28): error C2065: 'myPosition': identificador no declarado
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(11,47): error C2065: 'iniY': identificador no declarado
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Reward.cpp(11,54): error C2065: 'myMama': identificador no declarado
+  SDLApplication.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+  GameObject.cpp
+  GameState.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+  InvadersError.cpp
+  Laser.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+  main.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+  Mothership.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+  PlayState.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\PlayState.cpp(56,9): warning C4551: la llamada a la función no tiene lista de argumentos
+  Generando código...
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\GameStateMachine.h(19): warning C4715: 'GameStateMachine::currentState': no todas las rutas de acceso de control devuelven un valor
+  Compilando...
+  SceneObject.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  SDLError.cpp
+  ShooterAlien.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  texture.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.cpp(15,21): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.cpp(16,23): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.cpp(39,21): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.cpp(40,23): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+  UFO.cpp
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(71,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\texture.h(77,9): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Javi\Desktop\P3-TPV\HolaSDL\Laser.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  Generando código...

@@ -176,6 +176,7 @@ void PlayState::FireLaser(Point2D<int> position, const char* color) {
 	// Creamos el laser y se añade al vector
 	Laser* l = new Laser(this, this, nullptr, position, 10, 20, 1, 0, 0, color);
 	addObject(l);
+	objectElems.push_back(l);
 	//l->setListIterator(prev(objectElems.end()));
 }
 
@@ -183,6 +184,7 @@ void PlayState::SpawnUFO() {
 	Texture* auxTex = getGame()->getTexture(TextureName::UFOs);
 	UFO* u = new UFO(this, this, auxTex, Vector2D<int>(800, 10), auxTex->getFrameWidth(), auxTex->getFrameHeight(), 1, 0, 0, 0, 200);
 	addObject(u);
+	objectElems.push_back(u);
 	//u->setListIterator(prev(objectElems.end()));
 }
 
@@ -194,8 +196,11 @@ int PlayState::GetRandomRange(int min, int max) {
 
 // Colisiones
 bool PlayState::Damage(SDL_Rect rect, const char* c) {
-	for (auto it = objectElems.begin(); it != objectElems.end(); ++it) {
+	/*for (auto it = objectElems.begin(); it != objectElems.end(); ++it) {
 		if ((*it).Hit(rect, c)) return true;
+	}*/
+	for (SceneObject& obj : objectElems) {
+		if (obj.Hit(rect, c)) return true;
 	}
 	return false;
 }
@@ -240,6 +245,7 @@ void PlayState::LoadMaps(string map) {
 				Cannon* c = new Cannon(this, this, auxTex, Point2D<int>(elementX, elementY),
 					auxTex->getFrameWidth(), auxTex->getFrameHeight(), lifes, 0, 0, cooldown);
 				myList.push_back(c);
+				objectElems.push_back(c);
 				player = c;
 			}
 
@@ -252,6 +258,7 @@ void PlayState::LoadMaps(string map) {
 				Alien* a = new Alien(this, this, auxTex, Point2D<int>(elementX, elementY),
 					auxTex->getFrameWidth(), auxTex->getFrameHeight(), 1, subIndiceAlien, 0, mama);
 				myList.push_back(a);
+				objectElems.push_back(a);
 				mama->addAlien();
 			}
 
@@ -265,6 +272,7 @@ void PlayState::LoadMaps(string map) {
 				ShooterAlien* a = new ShooterAlien(this, this, auxTex, Point2D<int>(elementX, elementY),
 					auxTex->getFrameWidth(), auxTex->getFrameHeight(), 1, subIndiceAlien, 0, mama, cooldown);
 				myList.push_back(a);
+				objectElems.push_back(a);
 				mama->addAlien();
 			}
 
@@ -277,6 +285,7 @@ void PlayState::LoadMaps(string map) {
 				Bunker* b = new Bunker(this, this, auxTex, Point2D<int>(elementX, elementY),
 					auxTex->getFrameWidth(), auxTex->getFrameHeight(), lifes, 0, 0);
 				myList.push_back(b);
+				objectElems.push_back(b);
 			}
 
 			// Si leemos un UFO --> Asignamos el UFO
@@ -289,6 +298,7 @@ void PlayState::LoadMaps(string map) {
 				UFO* b = new UFO(this, this, auxTex, Point2D<int>(elementX, elementY),
 					auxTex->getFrameWidth(), auxTex->getFrameHeight(), 1, 0, 0, state, cooldown);
 				myList.push_back(b);
+				objectElems.push_back(b);
 			}
 
 			// Si leemos la Mothership --> Asignamos la Mothership

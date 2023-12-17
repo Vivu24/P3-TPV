@@ -71,6 +71,8 @@ bool Cannon::Hit(SDL_Rect rect, const char* c) {
 		--myLifes;
 		if (myLifes <= 0) {
 			myGame->HasDied(myIterator);
+			myState->HasDied(myAnchor);
+			myState->SetPop(true);
 			++myAnchor;
 		}
 		hasHit = true;

@@ -43,7 +43,10 @@ void Laser::Update() {
 	Move();
 
 	// Eliminación de la bala con su colisión
-	if(myGame->Damage(myRect, myType) || myLifes <= 0) myState->HasDied(myAnchor);
+	if (myGame->Damage(myRect, myType) || myLifes <= 0) {
+		myGame->HasDied(myIterator);
+		myState->HasDied(myAnchor);
+	}
 }
 
 // Hit

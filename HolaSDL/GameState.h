@@ -27,7 +27,7 @@ public:
 	virtual void Update() = 0;
 	virtual void HandleEvent(const SDL_Event&) = 0;
 	void Save(ostream&) const;
-	void HasDied(GameList<GameObject, true>::anchor);
+	void HasDied(GameList<GameObject, true>::anchor it);
 	SDLApplication* getGame() const { return myApp; };
 
 	virtual bool onEnter() = 0;
